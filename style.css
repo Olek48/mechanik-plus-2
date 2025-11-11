@@ -451,11 +451,22 @@ html {
 /* Desktop: align gallery groups consistently to prevent staggered layout */
 @media (min-width: 701px) {
   .gallery-group {
-    align-items: flex-start;
+    align-items: center !important;
   }
   .gallery-group > div[style*="max-width"] {
     max-width: 1200px !important;
     width: 100% !important;
+  }
+  /* Center 2-photo gallery groups on desktop - convert grid to flex for better centering */
+  .gallery-group > div[style*="display:grid"] {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 18px !important;
+  }
+  .gallery-group > div[style*="display:grid"] > .gallery-item {
+    flex: 0 0 auto !important;
+    max-width: 340px !important;
   }
 }
 
