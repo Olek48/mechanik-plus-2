@@ -528,6 +528,23 @@ html {
     font-size: 1.1rem;
     padding: 0 12px;
   }
+  /* Override inline grid styles for mobile - use flex instead of trying to override grid */
+  .gallery-group > div[style*="display"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  /* Ensure sub-containers also stack vertically */
+  .gallery-group div[style*="display:flex"] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .gallery-group .gallery-item {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
 }
 @media (max-width: 480px) {
   .gallery {
@@ -556,6 +573,14 @@ html {
   #fotovideo-title {
     font-size: 1.4rem;
     margin-bottom: 20px;
+  }
+  /* Override inline grid styles for very small mobile screens */
+  .gallery-group > div[style*="display"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }
 @media (max-width: 700px) {
