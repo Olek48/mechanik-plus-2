@@ -457,6 +457,10 @@ html {
     max-width: 1200px !important;
     width: 100% !important;
   }
+  /* Center 2-photo gallery groups on desktop */
+  .gallery-group > div[style*="display:grid"] {
+    justify-content: center !important;
+  }
 }
 
 /* Services heading style — apply same appearance to fotovideo title and gallery group titles */
