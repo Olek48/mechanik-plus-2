@@ -456,12 +456,15 @@ html {
   .gallery-group > div[style*="max-width"] {
     max-width: 1200px !important;
     width: 100% !important;
+    margin: 0 auto !important;
   }
   /* Center grid items when there are only 2 photos in a group */
   .gallery-group > div[style*="display:grid"] {
+    display: flex !important;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center !important;
-    grid-template-columns: repeat(auto-fit, minmax(220px, auto)) !important;
+    gap: 18px;
   }
 }
 
