@@ -460,6 +460,7 @@ html {
   /* Center 2-photo gallery groups on desktop */
   .gallery-group > div[style*="display:grid"] {
     justify-content: center !important;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 440px)) !important;
   }
 }
 
