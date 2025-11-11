@@ -457,10 +457,16 @@ html {
     max-width: 1200px !important;
     width: 100% !important;
   }
-  /* Center 2-photo gallery groups on desktop */
+  /* Center 2-photo gallery groups on desktop - convert grid to flex for better centering */
   .gallery-group > div[style*="display:grid"] {
+    display: flex !important;
+    flex-wrap: wrap !important;
     justify-content: center !important;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 440px)) !important;
+    gap: 18px !important;
+  }
+  .gallery-group > div[style*="display:grid"] > .gallery-item {
+    flex: 0 0 auto !important;
+    max-width: 340px !important;
   }
 }
 
