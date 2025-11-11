@@ -460,6 +460,7 @@ html {
   /* Center grid items when there are only 2 photos in a group */
   .gallery-group > div[style*="display:grid"] {
     justify-content: center;
+    align-items: center !important;
   }
 }
 
