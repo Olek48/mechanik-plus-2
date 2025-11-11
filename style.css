@@ -448,6 +448,17 @@ html {
   margin-top: 18px;
 }
 
+/* Desktop: align gallery groups consistently to prevent staggered layout */
+@media (min-width: 701px) {
+  .gallery-group {
+    align-items: flex-start;
+  }
+  .gallery-group > div[style*="max-width"] {
+    max-width: 1200px !important;
+    width: 100% !important;
+  }
+}
+
 /* Services heading style — apply same appearance to fotovideo title and gallery group titles */
 .services h2,
 #fotovideo-title,
