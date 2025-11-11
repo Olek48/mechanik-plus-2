@@ -443,19 +443,29 @@ html {
   grid-column: 1 / -1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
   margin-top: 18px;
+  width: 100%;
+}
+
+/* Gallery grid layout for photo containers */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 /* Desktop: align gallery groups consistently to prevent staggered layout */
 @media (min-width: 701px) {
   .gallery-group {
     align-items: flex-start;
+    width: 100%;
   }
-  .gallery-group > div[style*="max-width"] {
-    max-width: 1200px !important;
-    width: 100% !important;
+  .gallery-grid {
+    margin: 0;
   }
 }
 
