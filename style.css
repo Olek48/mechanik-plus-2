@@ -451,7 +451,7 @@ html {
 /* Desktop: align gallery groups consistently to prevent staggered layout */
 @media (min-width: 701px) {
   .gallery-group {
-    align-items: flex-start;
+    align-items: center;
   }
   .gallery-group > div[style*="max-width"] {
     max-width: 1200px !important;
