@@ -344,6 +344,10 @@ html {
   color: #eee;
   font-size: 1.15rem; /* було 1rem, стало більше */
 }
+/* Prevent email from wrapping to multiple lines */
+#footer-email {
+  white-space: nowrap;
+}
 .footer-map {
   flex: 0 0 540px;
   display: flex;
