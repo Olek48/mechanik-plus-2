@@ -184,5 +184,20 @@
   </div>
   <script src="script.js"></script>
   <script src="gallery.js"></script>
+  
+  <!-- Cookie Consent Banner -->
+  <link rel="stylesheet" href="cookie-consent.css">
+  <script src="cookie-consent.js"></script>
+  <script>
+    // Initialize cookie consent with GA ID placeholder
+    initCookieConsent({
+      gaId: '', // Replace with your Google Analytics ID (e.g., 'G-XXXXXXXXXX')
+      policyUrls: {
+        cs: 'cookies-cs.html',
+        uk: 'cookies-uk.html',
+        en: 'cookies-en.html'
+      }
+    });
+  </script>
 </body>
 </html>
