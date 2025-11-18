@@ -412,6 +412,85 @@
     });
   }
 
+  // Update banner and modal text when language changes
+  function updateBannerLanguage() {
+    const banner = document.getElementById('cookie-consent-banner');
+    const modal = document.getElementById('cookie-settings-modal');
+    
+    if (banner) {
+      const lang = getCurrentLanguage();
+      const t = translations[lang];
+      const policyUrl = config.policyUrls[lang] || config.policyUrls.cs;
+      
+      // Update banner text
+      const bannerTextEl = banner.querySelector('.cookie-consent-text');
+      if (bannerTextEl) {
+        bannerTextEl.innerHTML = `
+          ${t.bannerText}
+          <a href="${policyUrl}" target="_blank">${t.bannerLearnMore}</a>
+        `;
+      }
+      
+      // Update banner buttons
+      const acceptBtn = banner.querySelector('#cookie-accept-all');
+      const rejectBtn = banner.querySelector('#cookie-reject-all');
+      const settingsBtn = banner.querySelector('#cookie-settings-btn');
+      
+      if (acceptBtn) acceptBtn.textContent = t.btnAcceptAll;
+      if (rejectBtn) rejectBtn.textContent = t.btnRejectAll;
+      if (settingsBtn) settingsBtn.textContent = t.btnSettings;
+    }
+    
+    if (modal) {
+      const lang = getCurrentLanguage();
+      const t = translations[lang];
+      
+      // Update modal title and description
+      const modalTitle = modal.querySelector('.cookie-settings-header h2');
+      const modalDesc = modal.querySelector('.cookie-settings-header p');
+      if (modalTitle) modalTitle.textContent = t.settingsTitle;
+      if (modalDesc) modalDesc.textContent = t.settingsDesc;
+      
+      // Update cookie option titles and descriptions
+      const essentialTitle = modal.querySelector('.cookie-option:nth-child(1) h3');
+      const essentialDesc = modal.querySelector('.cookie-option:nth-child(1) .cookie-option-desc');
+      const analyticsTitle = modal.querySelector('.cookie-option:nth-child(2) h3');
+      const analyticsDesc = modal.querySelector('.cookie-option:nth-child(2) .cookie-option-desc');
+      
+      if (essentialTitle) essentialTitle.textContent = t.essentialTitle;
+      if (essentialDesc) essentialDesc.textContent = t.essentialDesc;
+      if (analyticsTitle) analyticsTitle.textContent = t.analyticsTitle;
+      if (analyticsDesc) analyticsDesc.textContent = t.analyticsDesc;
+      
+      // Update modal buttons
+      const cancelBtn = modal.querySelector('#cookie-settings-cancel');
+      const saveBtn = modal.querySelector('#cookie-settings-save');
+      
+      if (cancelBtn) cancelBtn.textContent = t.btnCancel;
+      if (saveBtn) saveBtn.textContent = t.btnSave;
+    }
+    
+    // Update footer link
+    updateFooterLink();
+  }
+  
+  // Update footer link when language changes
+  function updateFooterLink() {
+    const existingLink = document.querySelector('.footer-cookie-policy');
+    if (existingLink) {
+      const lang = getCurrentLanguage();
+      const t = translations[lang];
+      const policyUrl = config.policyUrls[lang] || config.policyUrls.cs;
+      
+      existingLink.innerHTML = `<a href="${policyUrl}">${t.footerLink}</a>`;
+    }
+  }
+  
+  // Listen for language changes
+  window.addEventListener('languageChanged', function() {
+    updateBannerLanguage();
+  });
+
   // Expose public API
   window.initCookieConsent = initCookieConsent;
   
