@@ -77,6 +77,9 @@ const translations = {
     formSuccessMessage: 'Děkujeme za vaši zprávu. Brzy se vám ozveme.',
     formErrorTitle: 'Chyba při odesílání',
     formErrorMessage: 'Omlouváme se, ale nepodařilo se odeslat zprávu. Zkuste to prosím znovu nebo nás kontaktujte přímo telefonicky.',
+    footerPrivacyLink: 'Zásady ochrany osobních údajů',
+    footerCookiesLink: 'Zásady cookies',
+    privacyConsentText: 'Souhlasím se <a href="privacy-cs.html" target="_blank" rel="noopener">zpracováním osobních údajů</a> za účelem vyřízení mého dotazu.',
   },
   uk: {
     navServices: 'Послуги',
@@ -142,6 +145,9 @@ const translations = {
     formSuccessMessage: 'Дякуємо за ваше повідомлення. Ми зв\'яжемося з вами найближчим часом.',
     formErrorTitle: 'Помилка відправки',
     formErrorMessage: 'Вибачте, не вдалося надіслати повідомлення. Будь ласка, спробуйте ще раз або зв\'яжіться з нами безпосередньо по телефону.',
+    footerPrivacyLink: 'Політика конфіденційності',
+    footerCookiesLink: 'Політика cookies',
+    privacyConsentText: 'Погоджуюсь з <a href="privacy-uk.html" target="_blank" rel="noopener">обробкою особистих даних</a> для обробки мого запиту.',
   },
   en: {
     navServices: 'Services',
@@ -207,6 +213,9 @@ const translations = {
     formSuccessMessage: 'Thank you for your message. We will contact you soon.',
     formErrorTitle: 'Sending Error',
     formErrorMessage: 'Sorry, we could not send your message. Please try again or contact us directly by phone.',
+    footerPrivacyLink: 'Privacy Policy',
+    footerCookiesLink: 'Cookie Policy',
+    privacyConsentText: 'I agree to the <a href="privacy-en.html" target="_blank" rel="noopener">processing of personal data</a> for the purpose of handling my inquiry.',
   }
 };
 
@@ -276,6 +285,14 @@ function setLanguage(lang) {
   if (document.getElementById('gallery-heating-title')) document.getElementById('gallery-heating-title').textContent = t.galleryHeatingTitle;
   if (document.getElementById('gallery-oilpressure-title')) document.getElementById('gallery-oilpressure-title').textContent = t.galleryOilPressureTitle;
   if (document.getElementById('gallery-headlight-title')) document.getElementById('gallery-headlight-title').textContent = t.galleryHeadlightTitle;
+  // Update footer links
+  if (document.getElementById('footer-privacy-link')) document.getElementById('footer-privacy-link').textContent = t.footerPrivacyLink;
+  if (document.getElementById('footer-cookies-link')) document.getElementById('footer-cookies-link').textContent = t.footerCookiesLink;
+  // Update privacy consent text
+  if (document.getElementById('privacy-consent-text')) document.getElementById('privacy-consent-text').innerHTML = t.privacyConsentText;
+  // Update footer privacy link href based on language
+  if (document.getElementById('footer-privacy-link')) document.getElementById('footer-privacy-link').href = 'privacy-' + lang + '.html';
+  if (document.getElementById('footer-cookies-link')) document.getElementById('footer-cookies-link').href = 'cookies-' + lang + '.html';
   document.title = t.title;
 }
 

@@ -1,0 +1,13 @@
+# robots.txt for mechanik-plus.com
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private directories if any
+# Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://mechanik-plus.com/sitemap.xml
+
+# Crawl-delay (optional, adjust if needed)
+# Crawl-delay: 1
