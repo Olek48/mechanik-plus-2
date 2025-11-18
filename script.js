@@ -320,6 +320,12 @@ document.addEventListener('DOMContentLoaded', function() {
           localStorage.setItem('siteLang', selected);
           // close list
           langListEl.classList.remove('show');
+          
+          // Dispatch language change event for cookie consent banner
+          const languageChangedEvent = new CustomEvent('languageChanged', {
+            detail: { language: selected }
+          });
+          window.dispatchEvent(languageChangedEvent);
         }
       });
     });
