@@ -192,6 +192,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## 🧪 Testing
+
+Before deployment, use the comprehensive [TESTING.md](TESTING.md) checklist to verify all functionality.
+
 ## 📞 Contact
 
 **Mechanik Plus**
