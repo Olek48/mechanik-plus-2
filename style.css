@@ -322,8 +322,7 @@ html {
   flex-wrap: nowrap;
 }
 .footer-info {
-  flex: 1 1 auto;
-  max-width: none;
+  flex: 1 1 0;
   min-width: 180px;
   color: #fff;
   font-size: 1.25rem;
@@ -378,7 +377,7 @@ html {
   border-radius: 12px;
 }
 .footer-hours {
-  flex: 1 1 auto;
+  flex: 1 1 0;
   color: #fff;
   font-size: 1.15rem;
   padding-left: 20px;
