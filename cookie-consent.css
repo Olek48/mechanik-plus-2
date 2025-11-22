@@ -322,7 +322,8 @@
 }
 
 /* Footer Cookie Policy Link */
-.footer-cookie-policy {
+/* REMOVED: No longer needed since the dynamic footer link has been removed */
+/* .footer-cookie-policy {
   text-align: center;
   margin-top: 20px;
   padding-top: 20px;
@@ -339,7 +340,7 @@
 .footer-cookie-policy a:hover {
   color: #e65c00;
   text-decoration: underline;
-}
+} */
 
 /* Mobile Responsive */
 @media (max-width: 768px) {

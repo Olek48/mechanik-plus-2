@@ -233,25 +233,26 @@
   }
 
   // Add footer link to cookie policy
-  function addFooterLink() {
-    const footer = document.querySelector('.footer-content');
-    if (!footer) return;
+  // REMOVED: This function was adding a duplicate cookie policy link in the footer
+  // function addFooterLink() {
+  //   const footer = document.querySelector('.footer-content');
+  //   if (!footer) return;
 
-    const lang = getCurrentLanguage();
-    const t = translations[lang];
-    const policyUrl = config.policyUrls[lang] || config.policyUrls.cs;
+  //   const lang = getCurrentLanguage();
+  //   const t = translations[lang];
+  //   const policyUrl = config.policyUrls[lang] || config.policyUrls.cs;
 
-    // Check if link already exists
-    if (document.querySelector('.footer-cookie-policy')) {
-      return;
-    }
+  //   // Check if link already exists
+  //   if (document.querySelector('.footer-cookie-policy')) {
+  //     return;
+  //   }
 
-    const linkDiv = document.createElement('div');
-    linkDiv.className = 'footer-cookie-policy';
-    linkDiv.innerHTML = `<a href="${policyUrl}">${t.footerLink}</a>`;
-    
-    footer.appendChild(linkDiv);
-  }
+  //   const linkDiv = document.createElement('div');
+  //   linkDiv.className = 'footer-cookie-policy';
+  //   linkDiv.innerHTML = `<a href="${policyUrl}">${t.footerLink}</a>`;
+  //   
+  //   footer.appendChild(linkDiv);
+  // }
 
   // Initialize cookie consent
   function initCookieConsent(options) {
@@ -276,11 +277,12 @@
     }
 
     // Add footer link
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', addFooterLink);
-    } else {
-      addFooterLink();
-    }
+    // REMOVED: No longer adding the duplicate footer link
+    // if (document.readyState === 'loading') {
+    //   document.addEventListener('DOMContentLoaded', addFooterLink);
+    // } else {
+    //   addFooterLink();
+    // }
   }
 
   // Setup banner and modal
@@ -373,20 +375,22 @@
     }
     
     // Update footer link
-    updateFooterLink();
+    // REMOVED: No longer calling updateFooterLink()
+    // updateFooterLink();
   }
   
   // Update footer link when language changes
-  function updateFooterLink() {
-    const existingLink = document.querySelector('.footer-cookie-policy');
-    if (existingLink) {
-      const lang = getCurrentLanguage();
-      const t = translations[lang];
-      const policyUrl = config.policyUrls[lang] || config.policyUrls.cs;
-      
-      existingLink.innerHTML = `<a href="${policyUrl}">${t.footerLink}</a>`;
-    }
-  }
+  // REMOVED: No longer needed since we removed the dynamic footer link
+  // function updateFooterLink() {
+  //   const existingLink = document.querySelector('.footer-cookie-policy');
+  //   if (existingLink) {
+  //     const lang = getCurrentLanguage();
+  //     const t = translations[lang];
+  //     const policyUrl = config.policyUrls[lang] || config.policyUrls.cs;
+  //     
+  //     existingLink.innerHTML = `<a href="${policyUrl}">${t.footerLink}</a>`;
+  //   }
+  // }
   
   // Listen for language changes
   window.addEventListener('languageChanged', function() {
