@@ -232,26 +232,7 @@
     hideBanner();
   }
 
-  // Add footer link to cookie policy
-  function addFooterLink() {
-    const footer = document.querySelector('.footer-content');
-    if (!footer) return;
-
-    const lang = getCurrentLanguage();
-    const t = translations[lang];
-    const policyUrl = config.policyUrls[lang] || config.policyUrls.cs;
-
-    // Check if link already exists
-    if (document.querySelector('.footer-cookie-policy')) {
-      return;
-    }
-
-    const linkDiv = document.createElement('div');
-    linkDiv.className = 'footer-cookie-policy';
-    linkDiv.innerHTML = `<a href="${policyUrl}">${t.footerLink}</a>`;
-    
-    footer.appendChild(linkDiv);
-  }
+  // REMOVED: addFooterLink() function - was adding a duplicate cookie policy link in the footer
 
   // Initialize cookie consent
   function initCookieConsent(options) {
@@ -275,12 +256,7 @@
       }
     }
 
-    // Add footer link
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', addFooterLink);
-    } else {
-      addFooterLink();
-    }
+    // REMOVED: addFooterLink() call - no longer adding the duplicate footer link
   }
 
   // Setup banner and modal
@@ -372,21 +348,10 @@
       if (saveBtn) saveBtn.textContent = t.btnSave;
     }
     
-    // Update footer link
-    updateFooterLink();
+    // REMOVED: updateFooterLink() call - no longer updating the removed footer link
   }
   
-  // Update footer link when language changes
-  function updateFooterLink() {
-    const existingLink = document.querySelector('.footer-cookie-policy');
-    if (existingLink) {
-      const lang = getCurrentLanguage();
-      const t = translations[lang];
-      const policyUrl = config.policyUrls[lang] || config.policyUrls.cs;
-      
-      existingLink.innerHTML = `<a href="${policyUrl}">${t.footerLink}</a>`;
-    }
-  }
+  // REMOVED: updateFooterLink() function - no longer needed since we removed the dynamic footer link
   
   // Listen for language changes
   window.addEventListener('languageChanged', function() {
