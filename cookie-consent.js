@@ -1,58 +1,51 @@
 /**
  * Cookie Consent Banner
- * Localized cookie consent banner with analytics integration
+ * Localized cookie consent banner for essential cookies only
  * Supports: cs (Czech), uk (Ukrainian), en (English)
+ * 
+ * Note: Google Analytics has been removed from this site.
  */
 
 (function() {
   'use strict';
 
-  // Translations for cookie consent
+  // Translations for cookie consent (analytics options removed)
   const translations = {
     cs: {
-      bannerText: 'Používáme cookies pro zlepšení vašeho zážitku. Některé cookies jsou nezbytné pro fungování webu, zatímco jiné nám pomáhají analyzovat návštěvnost.',
+      bannerText: 'Používáme cookies pro zlepšení vašeho zážitku. Tyto cookies jsou nezbytné pro fungování webu.',
       bannerLearnMore: 'Více informací',
-      btnAcceptAll: 'Přijmout vše',
-      btnRejectAll: 'Odmítnout vše',
+      btnAcceptAll: 'Rozumím',
       btnSettings: 'Nastavení',
       settingsTitle: 'Nastavení cookies',
-      settingsDesc: 'Vyberte, které cookies chcete povolit. Nezbytné cookies nelze zakázat.',
+      settingsDesc: 'Níže jsou uvedeny cookies používané na našem webu.',
       essentialTitle: 'Nezbytné cookies',
       essentialDesc: 'Tyto cookies jsou nutné pro správné fungování webu a nelze je zakázat.',
-      analyticsTitle: 'Analytické cookies',
-      analyticsDesc: 'Tyto cookies nám pomáhají pochopit, jak návštěvníci používají náš web. Pomáhají nám zlepšovat naše služby.',
       btnSave: 'Uložit nastavení',
       btnCancel: 'Zrušit',
       footerLink: 'Zásady cookies'
     },
     uk: {
-      bannerText: 'Ми використовуємо cookies для покращення вашого досвіду. Деякі cookies є необхідними для роботи сайту, а інші допомагають нам аналізувати відвідуваність.',
+      bannerText: 'Ми використовуємо cookies для покращення вашого досвіду. Ці cookies є необхідними для роботи сайту.',
       bannerLearnMore: 'Детальніше',
-      btnAcceptAll: 'Прийняти все',
-      btnRejectAll: 'Відхилити все',
+      btnAcceptAll: 'Зрозуміло',
       btnSettings: 'Налаштування',
       settingsTitle: 'Налаштування cookies',
-      settingsDesc: 'Оберіть, які cookies ви хочете дозволити. Необхідні cookies не можна вимкнути.',
+      settingsDesc: 'Нижче наведено cookies, які використовуються на нашому сайті.',
       essentialTitle: 'Необхідні cookies',
       essentialDesc: 'Ці cookies необхідні для правильної роботи сайту і не можуть бути вимкнені.',
-      analyticsTitle: 'Аналітичні cookies',
-      analyticsDesc: 'Ці cookies допомагають нам зрозуміти, як відвідувачі використовують наш сайт. Вони допомагають нам покращувати наші послуги.',
       btnSave: 'Зберегти налаштування',
       btnCancel: 'Скасувати',
       footerLink: 'Політика cookies'
     },
     en: {
-      bannerText: 'We use cookies to improve your experience. Some cookies are essential for the website to function, while others help us analyze traffic.',
+      bannerText: 'We use cookies to improve your experience. These cookies are essential for the website to function.',
       bannerLearnMore: 'Learn more',
-      btnAcceptAll: 'Accept All',
-      btnRejectAll: 'Reject All',
+      btnAcceptAll: 'Got it',
       btnSettings: 'Settings',
       settingsTitle: 'Cookie Settings',
-      settingsDesc: 'Choose which cookies you want to allow. Essential cookies cannot be disabled.',
+      settingsDesc: 'Below are the cookies used on our website.',
       essentialTitle: 'Essential Cookies',
       essentialDesc: 'These cookies are necessary for the website to function properly and cannot be disabled.',
-      analyticsTitle: 'Analytics Cookies',
-      analyticsDesc: 'These cookies help us understand how visitors use our website. They help us improve our services.',
       btnSave: 'Save Settings',
       btnCancel: 'Cancel',
       footerLink: 'Cookie Policy'
@@ -61,7 +54,6 @@
 
   // Configuration
   let config = {
-    gaId: '',
     policyUrls: {
       cs: 'cookies-cs.html',
       uk: 'cookies-uk.html',
@@ -115,47 +107,6 @@
     }
   }
 
-  // Load Google Analytics
-  function loadGoogleAnalytics(gaId) {
-    if (!gaId || gaId.trim() === '') {
-      console.log('Google Analytics ID not provided, skipping GA initialization');
-      return;
-    }
-
-    // Check if GA is already loaded
-    if (window.gtag) {
-      console.log('Google Analytics already loaded');
-      return;
-    }
-
-    // Create and load GA script
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
-    document.head.appendChild(script);
-
-    // Initialize GA
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      window.dataLayer.push(arguments);
-    }
-    window.gtag = gtag;
-    
-    gtag('js', new Date());
-    gtag('config', gaId, {
-      'anonymize_ip': true
-    });
-
-    console.log('Google Analytics loaded with ID:', gaId);
-  }
-
-  // Apply consent (load analytics if consented)
-  function applyConsent(consent) {
-    if (consent && consent.analytics === true) {
-      loadGoogleAnalytics(config.gaId);
-    }
-  }
-
   // Create banner HTML
   function createBanner() {
     const lang = getCurrentLanguage();
@@ -175,9 +126,6 @@
           <button class="cookie-consent-btn cookie-consent-btn-accept" id="cookie-accept-all">
             ${t.btnAcceptAll}
           </button>
-          <button class="cookie-consent-btn cookie-consent-btn-reject" id="cookie-reject-all">
-            ${t.btnRejectAll}
-          </button>
           <button class="cookie-consent-btn cookie-consent-btn-settings" id="cookie-settings-btn">
             ${t.btnSettings}
           </button>
@@ -188,7 +136,7 @@
     return banner;
   }
 
-  // Create settings modal HTML
+  // Create settings modal HTML (only essential cookies now)
   function createSettingsModal() {
     const lang = getCurrentLanguage();
     const t = translations[lang];
@@ -213,16 +161,6 @@
               </label>
             </div>
             <p class="cookie-option-desc">${t.essentialDesc}</p>
-          </div>
-          <div class="cookie-option">
-            <div class="cookie-option-header">
-              <h3>${t.analyticsTitle}</h3>
-              <label class="cookie-toggle">
-                <input type="checkbox" id="cookie-analytics">
-                <span class="cookie-toggle-slider"></span>
-              </label>
-            </div>
-            <p class="cookie-option-desc">${t.analyticsDesc}</p>
           </div>
         </div>
         <div class="cookie-settings-actions">
@@ -259,13 +197,6 @@
   function showSettings() {
     const modal = document.getElementById('cookie-settings-modal');
     if (modal) {
-      // Load current consent into checkboxes
-      const consent = getConsent();
-      const analyticsCheckbox = modal.querySelector('#cookie-analytics');
-      if (analyticsCheckbox) {
-        analyticsCheckbox.checked = consent ? consent.analytics : false;
-      }
-      
       modal.classList.add('show');
     }
   }
@@ -278,24 +209,10 @@
     }
   }
 
-  // Accept all cookies
+  // Accept all cookies (only essential now)
   function acceptAll() {
     const consent = {
       essential: true,
-      analytics: true,
-      timestamp: new Date().toISOString()
-    };
-    
-    saveConsent(consent);
-    applyConsent(consent);
-    hideBanner();
-  }
-
-  // Reject all cookies (except essential)
-  function rejectAll() {
-    const consent = {
-      essential: true,
-      analytics: false,
       timestamp: new Date().toISOString()
     };
     
@@ -305,17 +222,12 @@
 
   // Save settings from modal
   function saveSettings() {
-    const modal = document.getElementById('cookie-settings-modal');
-    const analyticsCheckbox = modal.querySelector('#cookie-analytics');
-    
     const consent = {
       essential: true,
-      analytics: analyticsCheckbox ? analyticsCheckbox.checked : false,
       timestamp: new Date().toISOString()
     };
     
     saveConsent(consent);
-    applyConsent(consent);
     hideSettings();
     hideBanner();
   }
@@ -351,10 +263,7 @@
     // Check if consent already exists
     const existingConsent = getConsent();
     
-    if (existingConsent) {
-      // Consent already given, apply it
-      applyConsent(existingConsent);
-    } else {
+    if (!existingConsent) {
       // No consent yet, show banner
       // Wait for DOM to be ready
       if (document.readyState === 'loading') {
@@ -389,7 +298,6 @@
 
     // Attach event listeners
     document.getElementById('cookie-accept-all').addEventListener('click', acceptAll);
-    document.getElementById('cookie-reject-all').addEventListener('click', rejectAll);
     document.getElementById('cookie-settings-btn').addEventListener('click', showSettings);
     
     document.getElementById('cookie-settings-close').addEventListener('click', hideSettings);
@@ -433,11 +341,9 @@
       
       // Update banner buttons
       const acceptBtn = banner.querySelector('#cookie-accept-all');
-      const rejectBtn = banner.querySelector('#cookie-reject-all');
       const settingsBtn = banner.querySelector('#cookie-settings-btn');
       
       if (acceptBtn) acceptBtn.textContent = t.btnAcceptAll;
-      if (rejectBtn) rejectBtn.textContent = t.btnRejectAll;
       if (settingsBtn) settingsBtn.textContent = t.btnSettings;
     }
     
@@ -452,15 +358,11 @@
       if (modalDesc) modalDesc.textContent = t.settingsDesc;
       
       // Update cookie option titles and descriptions
-      const essentialTitle = modal.querySelector('.cookie-option:nth-child(1) h3');
-      const essentialDesc = modal.querySelector('.cookie-option:nth-child(1) .cookie-option-desc');
-      const analyticsTitle = modal.querySelector('.cookie-option:nth-child(2) h3');
-      const analyticsDesc = modal.querySelector('.cookie-option:nth-child(2) .cookie-option-desc');
+      const essentialTitle = modal.querySelector('.cookie-option h3');
+      const essentialDesc = modal.querySelector('.cookie-option .cookie-option-desc');
       
       if (essentialTitle) essentialTitle.textContent = t.essentialTitle;
       if (essentialDesc) essentialDesc.textContent = t.essentialDesc;
-      if (analyticsTitle) analyticsTitle.textContent = t.analyticsTitle;
-      if (analyticsDesc) analyticsDesc.textContent = t.analyticsDesc;
       
       // Update modal buttons
       const cancelBtn = modal.querySelector('#cookie-settings-cancel');
