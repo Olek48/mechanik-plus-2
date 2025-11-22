@@ -1,17 +1,6 @@
 // Language translations
 // 
-// Cookie Consent Helper:
-// To check if user has consented to analytics before sending GA events:
-//   const consent = window.getCookieConsent();
-//   if (consent && consent.analytics && typeof window.gtag === 'function') {
-//     window.gtag('event', 'your_event', { ... });
-//   }
-// 
-// Listen for consent changes:
-//   window.addEventListener('cookieConsentChanged', function(e) {
-//     console.log('Consent changed:', e.detail);
-//   });
-//
+// Note: Google Analytics has been removed from this site.
 const translations = {
   cs: {
     navServices: 'Služby',
@@ -417,18 +406,8 @@ document.addEventListener('DOMContentLoaded', function() {
           showNotification(true);
           contactForm.reset();
           
-          // Send analytics event only if user consented to analytics
-          // Example of how to check cookie consent before sending GA events:
-          if (typeof window.getCookieConsent === 'function') {
-            const consent = window.getCookieConsent();
-            if (consent && consent.analytics && typeof window.gtag === 'function') {
-              window.gtag('event', 'form_submission', {
-                'event_category': 'contact',
-                'event_label': 'Contact Form'
-              });
-            }
-          }
-        } else {
+          // Analytics removed: Google Analytics tracking has been removed from this site
+        }else {
           return response.json().then(data => {
             if (data.errors) {
               showNotification(false);
