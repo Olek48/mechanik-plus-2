@@ -69,7 +69,6 @@ const translations = {
     privacyConsent: 'Souhlasím se',
     privacyPolicy: 'zásadami ochrany osobních údajů',
     footerPrivacyLink: 'Zásady ochrany osobních údajů',
-    footerCookieLink: 'Zásady cookies',
   },
   uk: {
     navServices: 'Послуги',
@@ -138,7 +137,6 @@ const translations = {
     privacyConsent: 'Я погоджуюсь з',
     privacyPolicy: 'політикою конфіденційності',
     footerPrivacyLink: 'Політика конфіденційності',
-    footerCookieLink: 'Політика файлів cookie',
   },
   en: {
     navServices: 'Services',
@@ -207,7 +205,6 @@ const translations = {
     privacyConsent: 'I agree with the',
     privacyPolicy: 'privacy policy',
     footerPrivacyLink: 'Privacy Policy',
-    footerCookieLink: 'Cookie Policy',
   }
 };
 
@@ -288,11 +285,6 @@ function setLanguage(lang) {
   if (footerPrivacyLink) {
     footerPrivacyLink.href = `privacy-${lang}.html`;
     footerPrivacyLink.textContent = t.footerPrivacyLink;
-  }
-  const footerCookieLink = document.getElementById('footer-cookie-link');
-  if (footerCookieLink) {
-    footerCookieLink.href = `cookies-${lang}.html`;
-    footerCookieLink.textContent = t.footerCookieLink;
   }
   document.title = t.title;
 }
