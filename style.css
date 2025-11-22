@@ -240,15 +240,17 @@ html {
 }
 
 /* Privacy policy link - always orange */
-#privacy-consent-label a {
-  color: #ff6600 !important;
-  text-decoration: none;
-}
+#privacy-consent-label a,
 #privacy-consent-label a:hover,
 #privacy-consent-label a:visited,
 #privacy-consent-label a:active,
 #privacy-consent-label a:focus {
   color: #ff6600 !important;
+}
+#privacy-consent-label a {
+  text-decoration: none;
+}
+#privacy-consent-label a:hover {
   text-decoration: underline;
 }
 .lang-select {
