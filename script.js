@@ -278,18 +278,21 @@ function setLanguage(lang) {
   if (document.getElementById('gallery-oilpressure-title')) document.getElementById('gallery-oilpressure-title').textContent = t.galleryOilPressureTitle;
   if (document.getElementById('gallery-headlight-title')) document.getElementById('gallery-headlight-title').textContent = t.galleryHeadlightTitle;
   // Update privacy consent label
-  if (document.getElementById('privacy-consent-label')) {
+  const privacyConsentLabel = document.getElementById('privacy-consent-label');
+  if (privacyConsentLabel) {
     const privacyUrl = `privacy-${lang}.html`;
-    document.getElementById('privacy-consent-label').innerHTML = `${t.privacyConsent} <a href="${privacyUrl}" target="_blank">${t.privacyPolicy}</a>`;
+    privacyConsentLabel.innerHTML = `${t.privacyConsent} <a href="${privacyUrl}" target="_blank">${t.privacyPolicy}</a>`;
   }
   // Update footer links
-  if (document.getElementById('footer-privacy-link')) {
-    document.getElementById('footer-privacy-link').href = `privacy-${lang}.html`;
-    document.getElementById('footer-privacy-link').textContent = t.footerPrivacyLink;
+  const footerPrivacyLink = document.getElementById('footer-privacy-link');
+  if (footerPrivacyLink) {
+    footerPrivacyLink.href = `privacy-${lang}.html`;
+    footerPrivacyLink.textContent = t.footerPrivacyLink;
   }
-  if (document.getElementById('footer-cookie-link')) {
-    document.getElementById('footer-cookie-link').href = `cookies-${lang}.html`;
-    document.getElementById('footer-cookie-link').textContent = t.footerCookieLink;
+  const footerCookieLink = document.getElementById('footer-cookie-link');
+  if (footerCookieLink) {
+    footerCookieLink.href = `cookies-${lang}.html`;
+    footerCookieLink.textContent = t.footerCookieLink;
   }
   document.title = t.title;
 }
