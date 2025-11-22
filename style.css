@@ -238,6 +238,13 @@ html {
   background: #222;
   color: #ff6600;
 }
+.contact-form a {
+  color: #ff6600;
+  text-decoration: underline;
+}
+.contact-form a:hover {
+  color: #e65c00;
+}
 .lang-select {
   position: relative;
   display: inline-block;
@@ -323,7 +330,7 @@ html {
 }
 .footer-info {
   flex: 1 1 auto;
-  max-width: none;
+  max-width: 350px;
   min-width: 180px;
   color: #fff;
   font-size: 1.25rem;
@@ -377,6 +384,7 @@ html {
 }
 .footer-hours {
   flex: 1 1 auto;
+  max-width: 350px;
   color: #fff;
   font-size: 1.15rem;
   padding-right: 32px;
