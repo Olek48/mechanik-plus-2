@@ -279,18 +279,15 @@ function setLanguage(lang) {
   if (document.getElementById('gallery-headlight-title')) document.getElementById('gallery-headlight-title').textContent = t.galleryHeadlightTitle;
   // Update privacy consent label
   if (document.getElementById('privacy-consent-label')) {
-    const lang = localStorage.getItem('siteLang') || 'cs';
     const privacyUrl = `privacy-${lang}.html`;
     document.getElementById('privacy-consent-label').innerHTML = `${t.privacyConsent} <a href="${privacyUrl}" target="_blank">${t.privacyPolicy}</a>`;
   }
   // Update footer links
   if (document.getElementById('footer-privacy-link')) {
-    const lang = localStorage.getItem('siteLang') || 'cs';
     document.getElementById('footer-privacy-link').href = `privacy-${lang}.html`;
     document.getElementById('footer-privacy-link').textContent = t.footerPrivacyLink;
   }
   if (document.getElementById('footer-cookie-link')) {
-    const lang = localStorage.getItem('siteLang') || 'cs';
     document.getElementById('footer-cookie-link').href = `cookies-${lang}.html`;
     document.getElementById('footer-cookie-link').textContent = t.footerCookieLink;
   }
