@@ -238,6 +238,19 @@ html {
   background: #222;
   color: #ff6600;
 }
+
+/* Privacy policy link - always orange */
+#privacy-consent-label a {
+  color: #ff6600 !important;
+  text-decoration: none;
+}
+#privacy-consent-label a:hover,
+#privacy-consent-label a:visited,
+#privacy-consent-label a:active,
+#privacy-consent-label a:focus {
+  color: #ff6600 !important;
+  text-decoration: underline;
+}
 .lang-select {
   position: relative;
   display: inline-block;

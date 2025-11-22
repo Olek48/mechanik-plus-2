@@ -281,7 +281,7 @@ function setLanguage(lang) {
   const privacyConsentLabel = document.getElementById('privacy-consent-label');
   if (privacyConsentLabel) {
     const privacyUrl = `privacy-${lang}.html`;
-    privacyConsentLabel.innerHTML = `${t.privacyConsent} <a href="${privacyUrl}" target="_blank">${t.privacyPolicy}</a>`;
+    privacyConsentLabel.innerHTML = `${t.privacyConsent} <a href="${privacyUrl}" target="_blank" style="color: #ff6600;">${t.privacyPolicy}</a>`;
   }
   // Update footer links
   const footerPrivacyLink = document.getElementById('footer-privacy-link');
