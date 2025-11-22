@@ -185,6 +185,10 @@
       <input type="email" name="email" id="contact-email" placeholder="E-mail (nepovinné)">
       <input type="tel" name="phone" id="contact-phone" placeholder="Telefon" required>
       <textarea name="message" id="contact-message" placeholder="Zpráva" required></textarea>
+      <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px;">
+        <input type="checkbox" id="privacy-consent" name="privacy_consent" required style="width: auto; margin: 0;">
+        <label for="privacy-consent" id="privacy-consent-label" style="margin: 0; font-size: 0.95rem;">Souhlasím se <a href="privacy-cs.html" target="_blank">zásadami ochrany osobních údajů</a></label>
+      </div>
       <button type="submit" class="btn" id="contact-btn">Odeslat</button>
     </form>
   </section>
@@ -220,6 +224,10 @@
       <div class="footer-logo">
           <!-- Logo removed from footer -->
       </div>
+    </div>
+    <div style="text-align: center; padding: 20px 10px 10px 10px; border-top: 1px solid rgba(255,255,255,0.1);">
+      <a href="privacy-cs.html" id="footer-privacy-link" style="color: #ff6600; text-decoration: none; margin: 0 10px;">Zásady ochrany osobních údajů</a> | 
+      <a href="cookies-cs.html" id="footer-cookie-link" style="color: #ff6600; text-decoration: none; margin: 0 10px;">Zásady cookies</a>
     </div>
   </footer>
   <script src="script.js"></script>

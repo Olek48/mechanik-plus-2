@@ -66,6 +66,10 @@ const translations = {
     formSuccessMessage: 'Děkujeme za vaši zprávu. Brzy se vám ozveme.',
     formErrorTitle: 'Chyba při odesílání',
     formErrorMessage: 'Omlouváme se, ale nepodařilo se odeslat zprávu. Zkuste to prosím znovu nebo nás kontaktujte přímo telefonicky.',
+    privacyConsent: 'Souhlasím se',
+    privacyPolicy: 'zásadami ochrany osobních údajů',
+    footerPrivacyLink: 'Zásady ochrany osobních údajů',
+    footerCookieLink: 'Zásady cookies',
   },
   uk: {
     navServices: 'Послуги',
@@ -131,6 +135,10 @@ const translations = {
     formSuccessMessage: 'Дякуємо за ваше повідомлення. Ми зв\'яжемося з вами найближчим часом.',
     formErrorTitle: 'Помилка відправки',
     formErrorMessage: 'Вибачте, не вдалося надіслати повідомлення. Будь ласка, спробуйте ще раз або зв\'яжіться з нами безпосередньо по телефону.',
+    privacyConsent: 'Я погоджуюсь з',
+    privacyPolicy: 'політикою конфіденційності',
+    footerPrivacyLink: 'Політика конфіденційності',
+    footerCookieLink: 'Політика файлів cookie',
   },
   en: {
     navServices: 'Services',
@@ -196,6 +204,10 @@ const translations = {
     formSuccessMessage: 'Thank you for your message. We will contact you soon.',
     formErrorTitle: 'Sending Error',
     formErrorMessage: 'Sorry, we could not send your message. Please try again or contact us directly by phone.',
+    privacyConsent: 'I agree with the',
+    privacyPolicy: 'privacy policy',
+    footerPrivacyLink: 'Privacy Policy',
+    footerCookieLink: 'Cookie Policy',
   }
 };
 
@@ -265,6 +277,23 @@ function setLanguage(lang) {
   if (document.getElementById('gallery-heating-title')) document.getElementById('gallery-heating-title').textContent = t.galleryHeatingTitle;
   if (document.getElementById('gallery-oilpressure-title')) document.getElementById('gallery-oilpressure-title').textContent = t.galleryOilPressureTitle;
   if (document.getElementById('gallery-headlight-title')) document.getElementById('gallery-headlight-title').textContent = t.galleryHeadlightTitle;
+  // Update privacy consent label
+  const privacyConsentLabel = document.getElementById('privacy-consent-label');
+  if (privacyConsentLabel) {
+    const privacyUrl = `privacy-${lang}.html`;
+    privacyConsentLabel.innerHTML = `${t.privacyConsent} <a href="${privacyUrl}" target="_blank">${t.privacyPolicy}</a>`;
+  }
+  // Update footer links
+  const footerPrivacyLink = document.getElementById('footer-privacy-link');
+  if (footerPrivacyLink) {
+    footerPrivacyLink.href = `privacy-${lang}.html`;
+    footerPrivacyLink.textContent = t.footerPrivacyLink;
+  }
+  const footerCookieLink = document.getElementById('footer-cookie-link');
+  if (footerCookieLink) {
+    footerCookieLink.href = `cookies-${lang}.html`;
+    footerCookieLink.textContent = t.footerCookieLink;
+  }
   document.title = t.title;
 }
 
