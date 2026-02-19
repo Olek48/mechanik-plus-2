@@ -1,8 +1,31 @@
+/* ============================================================
+   Design tokens — dark premium minimal theme
+   ============================================================ */
+:root {
+  --clr-bg: #0e0e10;
+  --clr-surface: #18181b;
+  --clr-surface-2: #26262c;
+  --clr-accent: #ff6600;
+  --clr-accent-hover: #e65c00;
+  --clr-text: #f0f0f0;
+  --clr-text-muted: #999;
+  --clr-border: rgba(255, 255, 255, 0.08);
+  --clr-border-accent: rgba(255, 102, 0, 0.3);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 24px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.6);
+  --container-max: 1200px;
+  --container-content: 900px;
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #fff;
-  color: #222;
+  background: var(--clr-bg);
+  color: var(--clr-text);
   overflow-x: hidden;
 }
 
@@ -21,8 +44,8 @@ html {
   padding: 24px 40px;
   background: #000;
   border-radius: 0 0 20px 20px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-  border-bottom: 3px solid #ff6600;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  border-bottom: 1px solid var(--clr-border-accent);
   max-width: 100%;
   width: 100%;
   box-sizing: border-box;
@@ -42,66 +65,59 @@ html {
   text-shadow: 0 0 6px #111;
 }
 .nav a {
-  color: #fff;
+  color: var(--clr-text);
   text-decoration: none;
   margin-left: 32px;
   font-weight: 500;
-  transition: color 0.2s, border-bottom 0.2s;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 2px;
-  /* Add frame like #lang-btn */
-  border: 2px solid #ff6600;
+  transition: color 0.2s, background 0.2s;
+  border: 1px solid var(--clr-border);
   border-radius: 16px;
   padding: 8px 22px;
-  background: #111;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  background: transparent;
 }
 .nav a:hover {
-  color: #ff6600;
-  border-bottom: 2px solid #ff6600;
-  /* Optional: highlight border on hover */
-  border-color: #111;
-  background: #ff6600;
-  color: #fff;
+  color: var(--clr-accent);
+  border-color: var(--clr-border-accent);
+  background: rgba(255, 102, 0, 0.08);
 }
 
-  /* Active navigation button: orange by default, black on hover */
+  /* Active navigation button: accent fill */
   .active-nav {
     color: #fff !important;
-    background: #ff6600 !important;
-    border: 2px solid #ff6600 !important;
+    background: var(--clr-accent) !important;
+    border: 1px solid var(--clr-accent) !important;
     border-radius: 16px;
-    box-shadow: 0 2px 8px #ff660088;
+    box-shadow: 0 2px 12px rgba(255,102,0,0.25);
     padding: 8px 22px;
     transition: background 0.2s, color 0.2s;
   }
   .active-nav:hover {
-    background: #111 !important;
+    background: var(--clr-accent-hover) !important;
     color: #fff !important;
-    border-color: #ff6600 !important;
+    border-color: var(--clr-accent-hover) !important;
   }
 
 .hero {
   text-align: center;
   padding: 80px 20px 60px 20px;
-  background: rgba(255,255,255,0.8);
+  background: var(--clr-surface);
   margin: 40px auto 0 auto;
   max-width: 600px;
   border-radius: 20px;
-  box-shadow: 0 4px 24px #1112, 0 2px 8px #ff660022;
-  border: 2px solid #1112;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--clr-border);
 }
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 12px;
-  color: #111;
+  color: var(--clr-text);
   text-shadow: 0 2px 8px #ff660033;
 }
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 28px;
-  color: #444;
-  border-left: 4px solid #ff6600;
+  color: var(--clr-text-muted);
+  border-left: 3px solid var(--clr-accent);
   padding-left: 12px;
 }
 .btn {
@@ -140,7 +156,7 @@ html {
 .services h2 {
   text-align: center;
   margin-bottom: 32px;
-  color: #111;
+  color: var(--clr-text);
   text-shadow: 0 2px 8px #ff660033;
 }
 .cards {
@@ -156,16 +172,17 @@ html {
   }
 }
 .card {
-  background: #111;
+  background: var(--clr-surface);
   border-radius: 20px;
-  border: 3px solid #ff6600;
+  border: 1px solid var(--clr-border);
   padding: 28px 20px;
   min-width: 220px;
   max-width: 240px;
   flex: 1 1 220px;
   text-align: center;
-  color: #fff;
+  color: var(--clr-text);
   margin: 8px;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 /* Desktop: remove max-width to allow rectangular cards */
@@ -176,31 +193,33 @@ html {
   }
 }
 .card:hover {
-  background: #222;
+  background: var(--clr-surface-2);
+  border-color: var(--clr-border-accent);
+  box-shadow: var(--shadow-sm);
 }
 .card h3 {
-  color: #ff6600;
+  color: var(--clr-accent);
   margin-bottom: 14px;
   font-size: 1.2rem;
 }
 .card p {
-  color: #fff;
+  color: var(--clr-text-muted);
   font-size: 1rem;
 }
 
 .contact {
   max-width: 540px;
   margin: 60px auto 40px auto;
-  background: #111;
+  background: var(--clr-surface);
   border-radius: 20px;
-  border: 3px solid #ff6600;
+  border: 1px solid var(--clr-border);
   padding: 32px 20px;
-  color: #fff;
+  color: var(--clr-text);
 }
 .contact h2 {
   text-align: center;
   margin-bottom: 24px;
-  color: #fff;
+  color: var(--clr-text);
   font-size: 1.6rem;
   font-weight: bold;
 }
@@ -213,18 +232,24 @@ html {
 .contact-form textarea {
   padding: 12px;
   border-radius: 12px;
-  border: 1.5px solid #ff6600;
+  border: 1px solid var(--clr-border);
   font-size: 1rem;
-  background: #222;
-  color: #fff;
+  background: var(--clr-surface-2);
+  color: var(--clr-text);
   resize: none;
+  transition: border-color 0.2s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--clr-border-accent);
 }
 .contact-form textarea {
   min-height: 80px;
 }
 .contact-form button {
   align-self: flex-end;
-  background: #ff6600;
+  background: var(--clr-accent);
   color: #fff;
   border-radius: 12px;
   font-size: 1rem;
@@ -232,11 +257,10 @@ html {
   border: none;
   padding: 10px 28px;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.2s;
 }
 .contact-form button:hover {
-  background: #222;
-  color: #ff6600;
+  background: var(--clr-accent-hover);
 }
 
 /* Privacy policy link - always orange */
@@ -257,31 +281,30 @@ html {
   margin-left: 24px;
 }
 #lang-btn {
-  background: #111;
-  color: #fff;
-  border: 2px solid #ff6600;
+  background: transparent;
+  color: var(--clr-text);
+  border: 1px solid var(--clr-border);
   border-radius: 16px;
   padding: 8px 22px;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-  transition: background 0.2s, border-color 0.2s;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 #lang-btn:hover {
-  background: #ff6600;
-  color: #fff;
-  border-color: #111;
+  background: rgba(255, 102, 0, 0.08);
+  color: var(--clr-accent);
+  border-color: var(--clr-border-accent);
 }
 .lang-list {
   display: block;
   position: absolute;
   right: 0;
   top: 110%;
-  background: #fff;
-  border: 2px solid #ff6600;
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
   border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  box-shadow: var(--shadow-md);
   min-width: 140px;
   z-index: 10;
   padding: 0;
@@ -298,24 +321,24 @@ html {
 }
 .lang-list li {
   padding: 12px 20px;
-  color: #111;
+  color: var(--clr-text);
   cursor: pointer;
   font-size: 1rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--clr-border);
   transition: background 0.2s, color 0.2s;
 }
 .lang-list li:last-child {
   border-bottom: none;
 }
 .lang-list li:hover {
-  background: #ff6600;
-  color: #fff;
+  background: rgba(255, 102, 0, 0.12);
+  color: var(--clr-accent);
 }
 
 .footer {
   background: #000;
-  border-top: 3px solid #ff6600;
-  box-shadow: 0 -2px 12px rgba(0,0,0,0.12);
+  border-top: 1px solid var(--clr-border-accent);
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.4);
   border-radius: 20px 20px 0 0;
   margin-top: 80px;
   padding: 80px 0 48px 0;
@@ -371,12 +394,11 @@ html {
 }
 .footer-map iframe {
   border-radius: 16px;
-  border: 2px solid #ff6600;
-  box-shadow: 0 2px 8px #1112;
+  border: 1px solid var(--clr-border-accent);
+  box-shadow: var(--shadow-sm);
   width: 540px;
   height: 220px;
   background: #222;
-  /* pointer-events: auto;  // default, only add if needed */
 }
 .footer-logo {
   display: none;
@@ -444,8 +466,8 @@ html {
 
 /* Softer, warm orange frames for gallery items (slightly more saturated) */
 .gallery-item {
-  border: 1px solid rgba(255,102,0,0.32); /* increased warm orange border */
-  background: #fff2e6;                     /* slightly warmer tint */
+  border: 1px solid var(--clr-border);
+  background: var(--clr-surface);
   border-radius: 14px;
   padding: 8px;
   width: 100%;
@@ -453,7 +475,7 @@ html {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  box-shadow: 0 12px 30px rgba(255,102,0,0.14); /* warmer, slightly stronger warm shadow */
+  box-shadow: var(--shadow-sm);
   transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
   max-width: 440px;
   overflow: hidden;
@@ -462,8 +484,8 @@ html {
 /* Gentle lift on hover with slightly stronger warm accent */
 .gallery-item:hover {
   transform: translateY(-4px);
-  box-shadow: 0 18px 44px rgba(16,24,32,0.10), 0 12px 34px rgba(255,102,0,0.14);
-  border-color: rgba(255,102,0,0.44);
+  box-shadow: var(--shadow-md);
+  border-color: var(--clr-border-accent);
 }
 
 /* Images: keep rounded but no heavy shadows */
@@ -515,7 +537,7 @@ html {
 .gallery-group-title {
   text-align: center;
   margin-bottom: 32px;
-  color: #111;
+  color: var(--clr-text);
   text-shadow: 0 2px 8px #ff660033;
   font-family: inherit;
   font-weight: 600; /* трохи грубіший шрифт, як у "Naše služby" */
@@ -731,8 +753,8 @@ html {
     display: block;
     margin: 0;
     padding: 10px 20px;
-    background: #111;
-    border: 2px solid #ff6600;
+    background: var(--clr-surface);
+    border: 1px solid var(--clr-border-accent);
     border-radius: 8px;
     min-width: 200px;
     text-align: center;
@@ -879,15 +901,15 @@ html {
 }
 
 .notification-content {
-  background: #fff;
+  background: var(--clr-surface);
   border-radius: 20px;
   padding: 40px 50px;
   max-width: 500px;
   width: 90%;
   text-align: center;
   position: relative;
-  border: 3px solid #ff6600;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--clr-border-accent);
+  box-shadow: var(--shadow-lg);
   animation: slideIn 0.3s ease-out;
 }
 
@@ -907,7 +929,7 @@ html {
   top: 15px;
   right: 20px;
   font-size: 2rem;
-  color: #666;
+  color: var(--clr-text-muted);
   cursor: pointer;
   transition: color 0.2s;
   line-height: 1;
@@ -947,13 +969,13 @@ html {
 }
 
 .notification-content h3 {
-  color: #111;
+  color: var(--clr-text);
   margin-bottom: 15px;
   font-size: 1.8rem;
 }
 
 .notification-content p {
-  color: #444;
+  color: var(--clr-text-muted);
   font-size: 1.1rem;
   line-height: 1.6;
 }
@@ -1107,4 +1129,126 @@ html {
     font-size: 1rem;
     margin-bottom: 16px;
   }
+}
+
+/* ============================================================
+   Shared Policy Page Styles
+   ============================================================ */
+.policy-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  background: var(--clr-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--clr-border);
+}
+.policy-container h1 {
+  color: var(--clr-text);
+  text-shadow: 0 2px 8px #ff660033;
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+}
+.policy-container h2 {
+  color: var(--clr-text);
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-size: 1.6rem;
+  border-left: 3px solid var(--clr-accent);
+  padding-left: 12px;
+}
+.policy-container h3 {
+  color: var(--clr-text);
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+.policy-container p {
+  color: var(--clr-text-muted);
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+}
+.policy-container ul {
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+.policy-container li {
+  color: var(--clr-text-muted);
+  line-height: 1.8;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+.policy-container a {
+  color: var(--clr-accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.policy-container a:hover {
+  color: var(--clr-accent-hover);
+  text-decoration: underline;
+}
+.policy-container a.btn {
+  color: #fff !important;
+}
+.policy-container a.btn:hover {
+  color: #fff !important;
+  text-decoration: none;
+}
+.policy-meta {
+  color: var(--clr-text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+  padding: 12px;
+  background: var(--clr-surface-2);
+  border-radius: var(--radius-sm);
+}
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--clr-accent);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.back-link:hover {
+  color: var(--clr-accent-hover);
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .policy-container {
+    padding: 24px 16px;
+    margin: 20px 12px;
+  }
+  .policy-container h1 {
+    font-size: 1.8rem;
+  }
+  .policy-container h2 {
+    font-size: 1.4rem;
+  }
+  .policy-container h3 {
+    font-size: 1.2rem;
+  }
+  .policy-container p .btn {
+    display: block;
+    margin: 10px auto !important;
+    max-width: 280px;
+    text-align: center;
+    width: 100%;
+  }
+  .policy-container p .btn:first-child {
+    margin-bottom: 10px !important;
+  }
+}
+
+/* ============================================================
+   Focus-visible styles (keyboard accessibility)
+   ============================================================ */
+:focus-visible {
+  outline: 2px solid var(--clr-accent);
+  outline-offset: 3px;
+}
+/* Remove default outline for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
 }
