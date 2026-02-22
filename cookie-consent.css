@@ -140,7 +140,7 @@
 }
 
 .cookie-settings-content {
-  background: var(--clr-surface);
+  background: #fff;
   border-radius: 20px;
   padding: 40px;
   max-width: 600px;
@@ -148,8 +148,8 @@
   max-height: 80vh;
   overflow-y: auto;
   position: relative;
-  border: 1px solid var(--clr-border-accent);
-  box-shadow: var(--shadow-lg);
+  border: 3px solid #ff6600;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   animation: slideIn 0.3s ease-out;
 }
 
@@ -169,7 +169,7 @@
   top: 15px;
   right: 20px;
   font-size: 2rem;
-  color: var(--clr-text-muted);
+  color: #666;
   cursor: pointer;
   transition: color 0.2s;
   line-height: 1;
@@ -187,13 +187,13 @@
 }
 
 .cookie-settings-header h2 {
-  color: var(--clr-text, #f0f0f0);
+  color: #111;
   font-size: 1.8rem;
   margin-bottom: 12px;
 }
 
 .cookie-settings-header p {
-  color: var(--clr-text-muted, #999);
+  color: #444;
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -205,9 +205,9 @@
 .cookie-option {
   padding: 16px;
   margin-bottom: 12px;
-  background: var(--clr-surface-2, #26262c);
+  background: #f5f5f5;
   border-radius: 12px;
-  border: 1px solid var(--clr-border, rgba(255,255,255,0.08));
+  border: 2px solid #ddd;
 }
 
 .cookie-option-header {
@@ -218,7 +218,7 @@
 }
 
 .cookie-option-header h3 {
-  color: var(--clr-text, #f0f0f0);
+  color: #111;
   font-size: 1.2rem;
   margin: 0;
 }
@@ -274,7 +274,7 @@
 }
 
 .cookie-option-desc {
-  color: var(--clr-text-muted, #999);
+  color: #555;
   font-size: 0.95rem;
   line-height: 1.5;
   margin-top: 8px;
@@ -311,14 +311,14 @@
 
 .cookie-settings-btn-cancel {
   background: transparent;
-  color: var(--clr-text-muted, #999);
-  border: 1px solid var(--clr-border, rgba(255,255,255,0.08));
+  color: #666;
+  border: 2px solid #666;
 }
 
 .cookie-settings-btn-cancel:hover {
-  background: var(--clr-surface-2, #26262c);
-  color: var(--clr-text, #f0f0f0);
-  border-color: rgba(255,255,255,0.2);
+  background: #f5f5f5;
+  color: #333;
+  border-color: #333;
 }
 
 /* REMOVED: .footer-cookie-policy styles - no longer needed since the dynamic footer link has been removed */
