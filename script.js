@@ -7,35 +7,43 @@ const translations = {
     navContact: 'Kontakt',
     navFotovideo: 'Fotografie našich prací',
     langBtn: 'Jazyk ▼',
-    heroTitle: 'Vaše auto, naše péče',
-    heroDesc: 'Profesionální opravy a servis vozidel, kterým můžete důvěřovat.',
-    heroBtn: 'Objednat se',
-    servicesTitle: 'Naše služby',
-    service1Title: 'Diagnostika',
-    service1Desc: 'Moderní vybavení pro přesné zjištění závad.',
-    service2Title: 'Výměna oleje',
-    service2Desc: 'Rychlá a spolehlivá výměna oleje a filtrů.',
-    service3Title: 'Servis brzd',
-    service3Desc: 'Bezpečná a efektivní kontrola a oprava brzd.',
-    service4Title: 'Pneuservis',
-    service4Desc: 'Přezutí, vyvážení a sezónní výměna pneumatik.',
-    contactTitle: 'Kontaktujte nás',
-    contactName: 'Jméno',
-    contactEmail: 'E-mail (nepovinné)',
-    contactPhone: 'Telefon',
-    contactMessage: 'Zpráva',
+    heroTitle: 'Udržujeme vás v bezpečí na silnici.',
+    heroDesc: 'V Mechanik-Plus přistupujeme ke každému vozidlu jako k vlastnímu — nabízíme poctivé, kvalitní opravy a servis, díky nimž jezdíte s jistotou.',
+    heroBtn: 'Objednat servis',
+    servicesTitle: 'Naše základní služby',
+    coreService1Title: 'Preventivní údržba',
+    coreService1Desc: 'Výměna oleje a filtrů, kontrola kapalin, rotace pneumatik a sezónní prohlídky — malé práce, které zabrání velkým opravám.',
+    coreService2Title: 'Diagnostika a opravy',
+    coreService2Desc: 'Přesná diagnostika motorů, brzd, podvozku nebo převodovky — opravíme to napoprvé.',
+    coreService3Title: 'Pneumatiky a geometrie',
+    coreService3Desc: 'Nové pneumatiky, vyvážení a čtyřkolová geometrie pro lepší spotřebu a bezpečnost.',
+    coreService4Title: 'Speciální služby',
+    coreService4Desc: 'Oprava klimatizace, elektrodiagnostika, výfukový systém a výkonové úpravy — každé auto si zaslouží odbornou péči.',
+    quoteText1: '„Od kontrolky motoru po opravy brzd"',
+    quoteText2: '— postaráme se o vás."',
+    quoteCaption: 'Od preventivní údržby po složité diagnostiky — jsme tu pro vás.',
+    bookingTitle: 'Objednejte svůj servis',
+    bookingDesc1: 'Řekněte nám, co potřebujete, a my potvrdíme termín ihned.',
+    bookingDesc2: 'Příchod bez objednání vítán, ale termín předem znamená rychlejší obsluhu.',
+    contactNameLabel: 'Jméno',
+    contactEmailLabel: 'E-mailová adresa',
+    contactMessageLabel: 'Zanechte zprávu',
     contactBtn: 'Odeslat',
     title: 'Mechanik Plus - Autoservis',
-    footerContactTitle: 'Kontakt',
-    footerPhone1: 'Telefon: +420 777 318 202',
-    footerPhone2: 'Telefon: +420 773 977 965',
+    footerTitle: 'Jak nás najdete?',
+    footerContactTitle: 'Kontakt:',
+    footerPhone1: '+420 777 318 202',
+    footerPhone2: '+420 773 977 965',
     footerEmail: 'autoservis@mechanik-plus.com',
     footerAddress: 'Líšný 2.díl 6, 468 22 Líšný-Železný Brod, Česko',
-    footerMap: 'https://www.google.com/maps?q=Líšný+2.díl+6,+468+22+Líšný-Železný+Brod,+Česko&output=embed',
-    footerHoursTitle: 'Otevírací doba',
-    footerHoursMonFri: 'Pondělí–Pátek: 8:00–20:00',
-    footerHoursSat: 'Sobota: 9:00–14:00',
-    footerHoursSun: 'Neděle: po zápisu',
+    footerMap: 'https://www.google.com/maps?q=Líšný+2.díl+6,+468+22+Líšný-Železný+Brod,+Česko',
+    footerHoursTitle: 'Otevírací doba:',
+    footerHoursMonFri: 'Po–Pá: 08:00–20:00',
+    footerHoursSat: 'Sb: 09:00–14:00',
+    footerHoursSun: 'Nd: po zápisu',
+    googleMapsBtn: 'Google Maps',
+    privacyConsentText: 'Odesláním souhlasíte s',
+    privacyPolicy: 'zásadami ochrany osobních údajů',
     repairHeadTitle: 'Oprava hlavy válců',
     galleryBMWTitle: 'Opravy motoru BMW',
     galleryFuelTitle: 'Diagnostika a oprava palivového systému',
@@ -66,8 +74,6 @@ const translations = {
     formSuccessMessage: 'Děkujeme za vaši zprávu. Brzy se vám ozveme.',
     formErrorTitle: 'Chyba při odesílání',
     formErrorMessage: 'Omlouváme se, ale nepodařilo se odeslat zprávu. Zkuste to prosím znovu nebo nás kontaktujte přímo telefonicky.',
-    privacyConsent: 'Souhlasím se',
-    privacyPolicy: 'zásadami ochrany osobních údajů',
     footerPrivacyLink: 'Zásady ochrany osobních údajů',
     footerCookieLink: 'Zásady cookies',
   },
@@ -76,35 +82,43 @@ const translations = {
     navContact: 'Контакт',
     navFotovideo: 'Фото наших робіт',
     langBtn: 'Мова ▼',
-    heroTitle: 'Ваш автомобіль, наша турбота',
-    heroDesc: 'Професійний ремонт та сервіс, якому ви можете довіряти.',
-    heroBtn: 'Записатися',
-    servicesTitle: 'Наші послуги',
-    service1Title: 'Діагностика',
-    service1Desc: 'Сучасне обладнання для точного виявлення несправностей.',
-    service2Title: 'Заміна оливи',
-    service2Desc: 'Швидка та надійна заміна оливи та фільтрів.',
-    service3Title: 'Сервіс гальм',
-    service3Desc: 'Безпечна та ефективна перевірка і ремонт гальм.',
-    service4Title: 'Шиномонтаж',
-    service4Desc: 'Монтаж, балансування та сезонна заміна шин.',
-    contactTitle: 'Звʼяжіться з нами',
-    contactName: "Ім'я",
-    contactEmail: 'E-mail (необовʼязково)',
-    contactPhone: 'Телефон',
-    contactMessage: 'Повідомлення',
-    contactBtn: 'Відправити',
+    heroTitle: 'Тримаємо вас у безпеці на дорозі.',
+    heroDesc: 'У Mechanik-Plus ми ставимося до кожного автомобіля як до власного — пропонуємо чесний, якісний ремонт та обслуговування, завдяки якому ви їздите впевнено.',
+    heroBtn: 'Записатися на сервіс',
+    servicesTitle: 'Основні послуги',
+    coreService1Title: 'Профілактичне обслуговування',
+    coreService1Desc: 'Заміна оливи та фільтрів, перевірка рідин, ротація шин та сезонні огляди — невеликі роботи, що запобігають великому ремонту.',
+    coreService2Title: 'Діагностика і ремонт',
+    coreService2Desc: 'Точна діагностика двигунів, гальм, підвіски або коробки передач — виправимо з першого разу.',
+    coreService3Title: 'Шини і сход-розвал',
+    coreService3Desc: 'Нові шини, балансування та чотириколісний сход-розвал для кращої витрати пального та безпеки.',
+    coreService4Title: 'Спеціальні послуги',
+    coreService4Desc: 'Ремонт кондиціонера, електродіагностика, вихлопна система та тюнінг — кожне авто заслуговує на фахову увагу.',
+    quoteText1: '«Від лампочки двигуна до ремонту гальм»',
+    quoteText2: '— ми вас прикриємо."',
+    quoteCaption: 'Від профілактичного обслуговування до складної діагностики — ми тут для вас.',
+    bookingTitle: 'Запишіться на сервіс',
+    bookingDesc1: 'Розкажіть, що вам потрібно, і ми підтвердимо термін одразу.',
+    bookingDesc2: 'Приїзд без запису вітається, але попередній запис означає швидше обслуговування.',
+    contactNameLabel: "Ім'я",
+    contactEmailLabel: 'Електронна адреса',
+    contactMessageLabel: 'Залишити повідомлення',
+    contactBtn: 'Надіслати',
     title: 'Mechanik Plus - Автосервіс',
-    footerContactTitle: 'Контакт',
-    footerPhone1: 'Телефон: +420 777 318 202',
-    footerPhone2: 'Телефон: +420 773 977 965',
+    footerTitle: 'Як нас знайти?',
+    footerContactTitle: 'Контакт:',
+    footerPhone1: '+420 777 318 202',
+    footerPhone2: '+420 773 977 965',
     footerEmail: 'autoservis@mechanik-plus.com',
     footerAddress: 'Líšný 2.díl 6, 468 22 Líšný-Železný Brod, Чехія',
-    footerMap: 'https://www.google.com/maps?q=Líšný+2.díl+6,+468+22+Líšný-Železný+Brod,+Чехія&output=embed',
-    footerHoursTitle: 'Години роботи',
-    footerHoursMonFri: 'Понеділок–Пʼятниця: 8:00–20:00',
-    footerHoursSat: 'Субота: 9:00–14:00',
-    footerHoursSun: 'Неділя: за записом',
+    footerMap: 'https://www.google.com/maps?q=Líšný+2.díl+6,+468+22+Líšný-Železný+Brod,+Чехія',
+    footerHoursTitle: 'Години роботи:',
+    footerHoursMonFri: 'Пн–Пт: 08:00–20:00',
+    footerHoursSat: 'Сб: 09:00–14:00',
+    footerHoursSun: 'Нд: за записом',
+    googleMapsBtn: 'Google Maps',
+    privacyConsentText: 'Надсилаючи, ви погоджуєтесь з',
+    privacyPolicy: 'політикою конфіденційності',
     repairHeadTitle: 'Ремонт головки блока циліндрів',
     galleryBMWTitle: 'Ремонт двигуна BMW',
     galleryFuelTitle: 'Діагностика і ремонт паливної системи',
@@ -115,65 +129,61 @@ const translations = {
     galleryHeatingTitle: 'Ремонт опалення та кондиціювання',
     galleryOilPressureTitle: 'Вимірювання тиску олії',
     galleryHeadlightTitle: 'Полірування фар',
-    service5Title: 'Ремонт підвіски і пневмопідвіски',
-    service5Desc: 'Ремонт підвіски і пневмопідвіски будь-якої складності.',
-    service6Title: 'Діагностика і ремонт паливної системи',
-    service6Desc: 'Діагностика і ремонт паливної системи.',
-    service7Title: 'Ремонт двигуна, коробки передач, зчеплення',
-    service7Desc: 'Професійний ремонт двигуна, коробки передач та зчеплення будь-яких авто.',
-    service8Title: 'Автоелектрик',
-    service8Desc: 'Діагностика та ремонт електричних систем автомобіля.',
-    service9Title: 'Встановлення додаткового обладнання',
-    service9Desc: 'Монтаж та заміна додаткового обладнання та аксесуарів.',
-    service10Title: 'Полірування фар',
-    service10Desc: 'Відновлення прозорості та блиску фар для кращої видимості.',
-    service11Title: 'Антикорозійна обробка',
-    service11Desc: 'Професійна антикорозійна обробка кузова та підвіски.',
-    service12Title: 'Заміна порогів',
-    service12Desc: 'Якісна заміна та ремонт порогів автомобіля.',
     formSuccessTitle: 'Успішно надіслано!',
     formSuccessMessage: 'Дякуємо за ваше повідомлення. Ми зв\'яжемося з вами найближчим часом.',
     formErrorTitle: 'Помилка відправки',
     formErrorMessage: 'Вибачте, не вдалося надіслати повідомлення. Будь ласка, спробуйте ще раз або зв\'яжіться з нами безпосередньо по телефону.',
-    privacyConsent: 'Я погоджуюсь з',
-    privacyPolicy: 'політикою конфіденційності',
     footerPrivacyLink: 'Політика конфіденційності',
     footerCookieLink: 'Політика файлів cookie',
   },
   en: {
     navServices: 'Services',
-    navContact: 'Contact',
+    navContact: 'Contact us',
     navFotovideo: 'Photos of our work',
     langBtn: 'Language ▼',
-    heroTitle: 'Your Car, Our Care',
-    heroDesc: 'Professional auto repair & service you can trust.',
-    heroBtn: 'Book Now',
-    servicesTitle: 'Our Services',
-    service1Title: 'Diagnostics',
-    service1Desc: 'Modern equipment for accurate fault detection.',
-    service2Title: 'Oil Change',
-    service2Desc: 'Quick and reliable oil & filter replacement.',
-    service3Title: 'Brake Service',
-    service3Desc: 'Safe and efficient brake inspection & repair.',
-    service4Title: 'Tire Service',
-    service4Desc: 'Mounting, balancing, and seasonal tire change.',
-    contactTitle: 'Contact Us',
-    contactName: 'Name',
-    contactEmail: 'E-mail (optional)',
-    contactPhone: 'Phone',
-    contactMessage: 'Message',
-    contactBtn: 'Send',
+    heroTitle: 'Keeping you safe and road-ready.',
+    heroDesc: 'At Mechanik-Plus, we treat every vehicle like it\'s our own — offering honest, high-quality repairs and maintenance that keep you moving confidently.',
+    heroBtn: 'Book your service',
+    servicesTitle: 'Our core services',
+    coreService1Title: 'Preventive Maintenance',
+    coreService1Desc: 'Oil & filter changes, fluid checks, tire rotation, and seasonal inspections — small jobs that prevent big repairs.',
+    coreService2Title: 'Diagnostics & Repairs',
+    coreService2Desc: 'Accurate troubleshooting for engines, brakes, suspension, or transmission issues — fixed right the first time.',
+    coreService3Title: 'Tires & Alignment',
+    coreService3Desc: 'New tires, balancing, and four-wheel alignment for better mileage and safety.',
+    coreService4Title: 'Specialty Services',
+    coreService4Desc: 'AC repair, electrical diagnostics, exhaust work, and performance tuning — because every car deserves expert attention.',
+    quoteText1: '"From check engine lights to brake jobs"',
+    quoteText2: '— we\'ve got you covered."',
+    quoteCaption: 'From preventive maintenance to complex diagnostics, we\'ve got you covered.',
+    bookingTitle: 'Book your auto service',
+    bookingDesc1: 'Tell us what you need, and we\'ll confirm your appointment time right away.',
+    bookingDesc2: 'Walk-ins welcome, but scheduling ahead means faster service.',
+    contactNameLabel: 'Name',
+    contactEmailLabel: 'Email address',
+    contactMessageLabel: 'Leave a message',
+    contactBtn: 'Submit',
     title: 'Mechanik Plus - Car Service',
-    footerContactTitle: 'Contact',
-    footerPhone1: 'Phone: +420 777 318 202',
-    footerPhone2: 'Phone: +420 773 977 965',
+    footerTitle: 'How to find us?',
+    footerContactTitle: 'Contact:',
+    footerPhone1: '+420 777 318 202',
+    footerPhone2: '+420 773 977 965',
     footerEmail: 'autoservis@mechanik-plus.com',
     footerAddress: 'Líšný 2.díl 6, 468 22 Líšný-Železný Brod, Czechia',
-    footerMap: 'https://www.google.com/maps?q=Líšný+2.díl+6,+468+22+Líšný-Železný+Brod,+Czechia&output=embed',
-    footerHoursTitle: 'Opening Hours',
-    footerHoursMonFri: 'Monday–Friday: 8:00–20:00',
-    footerHoursSat: 'Saturday: 9:00–14:00',
-    footerHoursSun: 'Sunday: by appointment',
+    footerMap: 'https://www.google.com/maps?q=Líšný+2.díl+6,+468+22+Líšný-Železný+Brod,+Czechia',
+    footerHoursTitle: 'Opening hours:',
+    footerHoursMonFri: 'Mon–Fri: 08:00–20:00',
+    footerHoursSat: 'Sat: 09:00–14:00',
+    footerHoursSun: 'Sun: by appointment',
+    googleMapsBtn: 'Google Maps',
+    privacyConsentText: 'By submitting, you agree with our',
+    privacyPolicy: 'privacy policy',
+    formSuccessTitle: 'Successfully Sent!',
+    formSuccessMessage: 'Thank you for your message. We will contact you soon.',
+    formErrorTitle: 'Sending Error',
+    formErrorMessage: 'Sorry, we could not send your message. Please try again or contact us directly by phone.',
+    footerPrivacyLink: 'Privacy Policy',
+    footerCookieLink: 'Cookie Policy',
     repairHeadTitle: 'Cylinder head repair',
     galleryBMWTitle: 'BMW engine repair',
     galleryFuelTitle: 'Fuel system diagnostics and repair',
@@ -184,30 +194,6 @@ const translations = {
     galleryHeatingTitle: 'Heating and air conditioning repair',
     galleryOilPressureTitle: 'Oil pressure measurement',
     galleryHeadlightTitle: 'Headlight polishing',
-    service5Title: 'Suspension and Air Suspension Repair',
-    service5Desc: 'Repair of suspension and air suspension of any complexity.',
-    service6Title: 'Fuel System Diagnostics and Repair',
-    service6Desc: 'Diagnostics and repair of the fuel system.',
-    service7Title: 'Engine, Gearbox, and Clutch Repair',
-    service7Desc: 'Professional repair of engine, gearbox, and clutch for any car.',
-    service8Title: 'Auto Electrician',
-    service8Desc: 'Diagnostics and repair of vehicle electrical systems.',
-    service9Title: 'Additional Equipment Installation',
-    service9Desc: 'Installation and replacement of additional equipment and accessories.',
-    service10Title: 'Headlight Polishing',
-    service10Desc: 'Restoration of headlight clarity and shine for better visibility.',
-    service11Title: 'Anti-corrosion Treatment',
-    service11Desc: 'Professional anti-corrosion treatment of body and suspension.',
-    service12Title: 'Sill Replacement',
-    service12Desc: 'Quality replacement and repair of car sills.',
-    formSuccessTitle: 'Successfully Sent!',
-    formSuccessMessage: 'Thank you for your message. We will contact you soon.',
-    formErrorTitle: 'Sending Error',
-    formErrorMessage: 'Sorry, we could not send your message. Please try again or contact us directly by phone.',
-    privacyConsent: 'I agree with the',
-    privacyPolicy: 'privacy policy',
-    footerPrivacyLink: 'Privacy Policy',
-    footerCookieLink: 'Cookie Policy',
   }
 };
 
@@ -225,42 +211,36 @@ function setLanguage(lang) {
   if (document.getElementById('hero-desc')) document.getElementById('hero-desc').textContent = t.heroDesc;
   if (document.getElementById('hero-btn')) document.getElementById('hero-btn').textContent = t.heroBtn;
   if (document.getElementById('services-title')) document.getElementById('services-title').textContent = t.servicesTitle;
-  if (document.getElementById('service1-title')) document.getElementById('service1-title').textContent = t.service1Title;
-  if (document.getElementById('service1-desc')) document.getElementById('service1-desc').textContent = t.service1Desc;
-  if (document.getElementById('service2-title')) document.getElementById('service2-title').textContent = t.service2Title;
-  if (document.getElementById('service2-desc')) document.getElementById('service2-desc').textContent = t.service2Desc;
-  if (document.getElementById('service3-title')) document.getElementById('service3-title').textContent = t.service3Title;
-  if (document.getElementById('service3-desc')) document.getElementById('service3-desc').textContent = t.service3Desc;
-  if (document.getElementById('service4-title')) document.getElementById('service4-title').textContent = t.service4Title;
-  if (document.getElementById('service4-desc')) document.getElementById('service4-desc').textContent = t.service4Desc;
-  if (document.getElementById('service5-title')) document.getElementById('service5-title').textContent = t.service5Title;
-  if (document.getElementById('service5-desc')) document.getElementById('service5-desc').textContent = t.service5Desc;
-  if (document.getElementById('service6-title')) document.getElementById('service6-title').textContent = t.service6Title;
-  if (document.getElementById('service6-desc')) document.getElementById('service6-desc').textContent = t.service6Desc;
-  if (document.getElementById('service7-title')) document.getElementById('service7-title').textContent = t.service7Title;
-  if (document.getElementById('service7-desc')) document.getElementById('service7-desc').textContent = t.service7Desc;
-  if (document.getElementById('service8-title')) document.getElementById('service8-title').textContent = t.service8Title;
-  if (document.getElementById('service8-desc')) document.getElementById('service8-desc').textContent = t.service8Desc;
-  if (document.getElementById('service9-title')) document.getElementById('service9-title').textContent = t.service9Title;
-  if (document.getElementById('service9-desc')) document.getElementById('service9-desc').textContent = t.service9Desc;
-  if (document.getElementById('service10-title')) document.getElementById('service10-title').textContent = t.service10Title;
-  if (document.getElementById('service10-desc')) document.getElementById('service10-desc').textContent = t.service10Desc;
-  if (document.getElementById('service11-title')) document.getElementById('service11-title').textContent = t.service11Title;
-  if (document.getElementById('service11-desc')) document.getElementById('service11-desc').textContent = t.service11Desc;
-  if (document.getElementById('service12-title')) document.getElementById('service12-title').textContent = t.service12Title;
-  if (document.getElementById('service12-desc')) document.getElementById('service12-desc').textContent = t.service12Desc;
-  if (document.getElementById('contact-title')) document.getElementById('contact-title').textContent = t.contactTitle;
-  if (document.getElementById('contact-name')) document.getElementById('contact-name').placeholder = t.contactName;
-  if (document.getElementById('contact-email')) document.getElementById('contact-email').placeholder = t.contactEmail;
-  if (document.getElementById('contact-phone')) document.getElementById('contact-phone').placeholder = t.contactPhone;
-  if (document.getElementById('contact-message')) document.getElementById('contact-message').placeholder = t.contactMessage;
+  // Core services (new 4-row table)
+  if (document.getElementById('coreService1-title')) document.getElementById('coreService1-title').textContent = t.coreService1Title;
+  if (document.getElementById('coreService1-desc')) document.getElementById('coreService1-desc').textContent = t.coreService1Desc;
+  if (document.getElementById('coreService2-title')) document.getElementById('coreService2-title').textContent = t.coreService2Title;
+  if (document.getElementById('coreService2-desc')) document.getElementById('coreService2-desc').textContent = t.coreService2Desc;
+  if (document.getElementById('coreService3-title')) document.getElementById('coreService3-title').textContent = t.coreService3Title;
+  if (document.getElementById('coreService3-desc')) document.getElementById('coreService3-desc').textContent = t.coreService3Desc;
+  if (document.getElementById('coreService4-title')) document.getElementById('coreService4-title').textContent = t.coreService4Title;
+  if (document.getElementById('coreService4-desc')) document.getElementById('coreService4-desc').textContent = t.coreService4Desc;
+  // Quote section
+  if (document.getElementById('quote-text1')) document.getElementById('quote-text1').textContent = t.quoteText1;
+  if (document.getElementById('quote-text2')) document.getElementById('quote-text2').textContent = t.quoteText2;
+  if (document.getElementById('quote-caption')) document.getElementById('quote-caption').textContent = t.quoteCaption;
+  // Booking section
+  if (document.getElementById('booking-title')) document.getElementById('booking-title').textContent = t.bookingTitle;
+  if (document.getElementById('booking-desc1')) document.getElementById('booking-desc1').textContent = t.bookingDesc1;
+  if (document.getElementById('booking-desc2')) document.getElementById('booking-desc2').textContent = t.bookingDesc2;
+  if (document.getElementById('contact-name-label')) document.getElementById('contact-name-label').textContent = t.contactNameLabel;
+  if (document.getElementById('contact-email-label')) document.getElementById('contact-email-label').textContent = t.contactEmailLabel;
+  if (document.getElementById('contact-message-label')) document.getElementById('contact-message-label').textContent = t.contactMessageLabel;
   if (document.getElementById('contact-btn')) document.getElementById('contact-btn').textContent = t.contactBtn;
+  // Footer
+  if (document.getElementById('footer-title')) document.getElementById('footer-title').textContent = t.footerTitle;
   if (document.getElementById('footer-contact-title')) document.getElementById('footer-contact-title').textContent = t.footerContactTitle;
   if (document.getElementById('footer-phone-1')) document.getElementById('footer-phone-1').textContent = t.footerPhone1;
   if (document.getElementById('footer-phone-2')) document.getElementById('footer-phone-2').textContent = t.footerPhone2;
   if (document.getElementById('footer-email')) document.getElementById('footer-email').textContent = t.footerEmail;
   if (document.getElementById('footer-address')) document.getElementById('footer-address').textContent = t.footerAddress;
-  if (document.getElementById('footer-map')) document.getElementById('footer-map').src = t.footerMap;
+  if (document.getElementById('footer-map')) document.getElementById('footer-map').href = t.footerMap;
+  if (document.getElementById('footer-map-btn-text')) document.getElementById('footer-map-btn-text').textContent = t.googleMapsBtn;
   if (document.getElementById('footer-hours-title')) document.getElementById('footer-hours-title').textContent = t.footerHoursTitle;
   if (document.getElementById('footer-hours-monfri')) document.getElementById('footer-hours-monfri').textContent = t.footerHoursMonFri;
   if (document.getElementById('footer-hours-sat')) document.getElementById('footer-hours-sat').textContent = t.footerHoursSat;
@@ -277,11 +257,11 @@ function setLanguage(lang) {
   if (document.getElementById('gallery-heating-title')) document.getElementById('gallery-heating-title').textContent = t.galleryHeatingTitle;
   if (document.getElementById('gallery-oilpressure-title')) document.getElementById('gallery-oilpressure-title').textContent = t.galleryOilPressureTitle;
   if (document.getElementById('gallery-headlight-title')) document.getElementById('gallery-headlight-title').textContent = t.galleryHeadlightTitle;
-  // Update privacy consent label
+  // Update privacy consent note
   const privacyConsentLabel = document.getElementById('privacy-consent-label');
   if (privacyConsentLabel) {
     const privacyUrl = `privacy-${lang}.html`;
-    privacyConsentLabel.innerHTML = `${t.privacyConsent} <a href="${privacyUrl}" target="_blank">${t.privacyPolicy}</a>`;
+    privacyConsentLabel.innerHTML = `${t.privacyConsentText} <a href="${privacyUrl}" target="_blank">${t.privacyPolicy}</a>.`;
   }
   // Update footer links
   const footerPrivacyLink = document.getElementById('footer-privacy-link');
