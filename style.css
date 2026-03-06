@@ -53,7 +53,7 @@ html {
 .nav a {
   color: #fff;
   text-decoration: none;
-  background: #e63232;
+  background: #FF3131;
   border: none;
   border-radius: 24px;
   padding: 10px 20px;
@@ -65,7 +65,7 @@ html {
 
 .nav a:hover,
 .active-nav {
-  background: #c02828 !important;
+  background: #cc1515 !important;
   color: #fff !important;
 }
 
@@ -75,7 +75,7 @@ html {
 }
 
 #lang-btn {
-  background: #e63232;
+  background: #FF3131;
   color: #fff;
   border: none;
   border-radius: 24px;
@@ -87,7 +87,7 @@ html {
 }
 
 #lang-btn:hover {
-  background: #c02828;
+  background: #cc1515;
 }
 
 .lang-list {
@@ -96,7 +96,7 @@ html {
   right: 0;
   top: 110%;
   background: #fff;
-  border: 2px solid #e63232;
+  border: 2px solid #FF3131;
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
   min-width: 140px;
@@ -129,7 +129,7 @@ html {
 }
 
 .lang-list li:hover {
-  background: #e63232;
+  background: #FF3131;
   color: #fff;
 }
 
@@ -165,7 +165,7 @@ html {
 .hero h1 {
   font-size: 3.8rem;
   font-weight: 900;
-  color: #e63232;
+  color: #FF3131;
   line-height: 1.08;
   margin: 0;
   text-shadow: none;
@@ -219,7 +219,7 @@ html {
 .services h2 {
   font-size: 2.4rem;
   font-weight: 900;
-  color: #e63232;
+  color: #FF3131;
   margin: 0 0 40px 0;
   text-align: left;
 }
@@ -246,7 +246,7 @@ html {
 
 .service-label {
   flex: 0 0 260px;
-  background: #e63232;
+  background: #FF3131;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -307,7 +307,7 @@ html {
 .quote-red {
   font-size: 2.6rem;
   font-weight: 900;
-  color: #e63232;
+  color: #FF3131;
   margin: 0 0 6px 0;
   line-height: 1.15;
   font-style: italic;
@@ -350,7 +350,7 @@ html {
 .booking-left h2 {
   font-size: 2.6rem;
   font-weight: 900;
-  color: #e63232;
+  color: #FF3131;
   margin: 0 0 24px 0;
   line-height: 1.1;
 }
@@ -463,7 +463,7 @@ html {
 /* Legacy .btn class used by cookies/privacy pages */
 .btn {
   display: inline-block;
-  background: #e63232;
+  background: #FF3131;
   color: #fff;
   padding: 12px 32px;
   border: none;
@@ -476,7 +476,7 @@ html {
 }
 
 .btn:hover {
-  background: #c02828;
+  background: #cc1515;
 }
 
 /* ========================================================
@@ -496,7 +496,7 @@ html {
 .footer-title {
   font-size: 2.4rem;
   font-weight: 900;
-  color: #e63232;
+  color: #FF3131;
   margin: 0 0 36px 0;
 }
 
@@ -541,7 +541,7 @@ html {
 .footer-map {
   flex: 0 0 380px;
   height: 300px;
-  background: #e63232;
+  background: #FF3131;
   border-radius: 20px;
   overflow: hidden;
   padding: 8px;
@@ -562,7 +562,7 @@ html {
 }
 
 .footer-policy-links a {
-  color: #e63232;
+  color: #FF3131;
   text-decoration: none;
   margin: 0 10px;
   font-size: 0.9rem;
@@ -570,12 +570,12 @@ html {
 }
 
 .footer-policy-links a:hover {
-  color: #c02828;
+  color: #cc1515;
   text-decoration: underline;
 }
 
 .footer-separator {
-  color: #e63232;
+  color: #FF3131;
   margin: 0 4px;
 }
 
@@ -608,7 +608,7 @@ html {
   width: 90%;
   text-align: center;
   position: relative;
-  border: 3px solid #e63232;
+  border: 3px solid #FF3131;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   animation: slideIn 0.3s ease-out;
 }
@@ -635,7 +635,7 @@ html {
 }
 
 .notification-close:hover {
-  color: #e63232;
+  color: #FF3131;
 }
 
 .notification-icon {
@@ -731,7 +731,7 @@ html {
 .gallery-group-title {
   text-align: left;
   margin-bottom: 32px;
-  color: #e63232;
+  color: #FF3131;
   font-family: inherit;
   font-weight: 900;
 }
@@ -782,7 +782,7 @@ html {
   z-index: 10002;
 }
 
-.gallery-modal-close:hover { color: #e63232; }
+.gallery-modal-close:hover { color: #FF3131; }
 
 /* ========================================================
    RESPONSIVE – TABLET (max 1100px)
