@@ -26,16 +26,16 @@ const translations = {
     contactMessage: 'Zpráva',
     contactBtn: 'Odeslat',
     title: 'Mechanik Plus - Autoservis',
-    footerContactTitle: 'Kontakt',
+    footerContactTitle: 'Kontakt:',
     footerPhone1: 'Telefon: +420 777 318 202',
     footerPhone2: 'Telefon: +420 773 977 965',
     footerEmail: 'autoservis@mechanik-plus.com',
     footerAddress: 'Líšný 2.díl 6, 468 22 Líšný-Železný Brod, Česko',
     footerMap: 'https://www.google.com/maps?q=Líšný+2.díl+6,+468+22+Líšný-Železný+Brod,+Česko&output=embed',
-    footerHoursTitle: 'Otevírací doba',
-    footerHoursMonFri: 'Pondělí–Pátek: 8:00–20:00',
-    footerHoursSat: 'Sobota: 9:00–14:00',
-    footerHoursSun: 'Neděle: po zápisu',
+    footerHoursTitle: 'Otevírací doba:',
+    footerHoursMonFri: 'Pn-Pá: 08:00-20:00',
+    footerHoursSat: 'So: 09:00-14:00',
+    footerHoursSun: 'Ne: po zápisu',
     repairHeadTitle: 'Oprava hlavy válců',
     galleryBMWTitle: 'Opravy motoru BMW',
     galleryFuelTitle: 'Diagnostika a oprava palivového systému',
@@ -70,6 +70,29 @@ const translations = {
     privacyPolicy: 'zásadami ochrany osobních údajů',
     footerPrivacyLink: 'Zásady ochrany osobních údajů',
     footerCookieLink: 'Zásady cookies',
+    heroTitle: 'Vaše auto v bezpečí, připravené na cestu.',
+    heroDesc: 'U nás se ke každému vozidlu chováme jako k vlastnímu — poctivé, kvalitní opravy a servis, abyste vždy bezpečně dojeli.',
+    heroBtn: 'Objednat se',
+    servicesTitle: 'Naše hlavní služby',
+    coreService1Title: 'Preventivní údržba',
+    coreService1Desc: 'Výměna oleje a filtrů, kontrola kapalin, rotace pneumatik a sezónní prohlídky — malé práce, které předcházejí velkým opravám.',
+    coreService2Title: 'Diagnostika a opravy',
+    coreService2Desc: 'Přesná diagnostika problémů motoru, brzd, podvozku nebo převodovky — opraveno hned napoprvé.',
+    coreService3Title: 'Pneumatiky a geometrie',
+    coreService3Desc: 'Nové pneumatiky, vyvážení a čtyřkolová geometrie pro nižší spotřebu a vyšší bezpečnost.',
+    coreService4Title: 'Speciální služby',
+    coreService4Desc: 'Oprava klimatizace, elektrodiagnostika, práce na výfuku a výkonové ladění — protože každé auto si zaslouží odbornou péči.',
+    quoteText1: '„Od kontrolky motoru po výměnu brzd',
+    quoteText2: '— postaráme se o vás."',
+    quoteCaption: 'Od preventivní údržby po složitou diagnostiku — jsme tu pro vás.',
+    bookingTitle: 'Rezervujte si servis',
+    bookingDesc1: 'Řekněte nám, co potřebujete, a my potvrdíme čas vaší návštěvy.',
+    bookingDesc2: 'Příjímáme i bez objednání, ale s objednáním provedeme servis rychleji.',
+    contactNameLabel: 'Jméno',
+    contactEmailLabel: 'E-mail',
+    contactMessageLabel: 'Zpráva',
+    footerTitle: 'Jak nás najít?',
+    googleMapsBtn: 'Google Maps',
   },
   uk: {
     navServices: 'Послуги',
@@ -95,16 +118,16 @@ const translations = {
     contactMessage: 'Повідомлення',
     contactBtn: 'Відправити',
     title: 'Mechanik Plus - Автосервіс',
-    footerContactTitle: 'Контакт',
+    footerContactTitle: 'Контакт:',
     footerPhone1: 'Телефон: +420 777 318 202',
     footerPhone2: 'Телефон: +420 773 977 965',
     footerEmail: 'autoservis@mechanik-plus.com',
     footerAddress: 'Líšný 2.díl 6, 468 22 Líšný-Železný Brod, Чехія',
     footerMap: 'https://www.google.com/maps?q=Líšný+2.díl+6,+468+22+Líšný-Železný+Brod,+Чехія&output=embed',
-    footerHoursTitle: 'Години роботи',
-    footerHoursMonFri: 'Понеділок–Пʼятниця: 8:00–20:00',
-    footerHoursSat: 'Субота: 9:00–14:00',
-    footerHoursSun: 'Неділя: за записом',
+    footerHoursTitle: 'Години роботи:',
+    footerHoursMonFri: 'Пн-Пт: 08:00-20:00',
+    footerHoursSat: 'Сб: 09:00-14:00',
+    footerHoursSun: 'Нд: за записом',
     repairHeadTitle: 'Ремонт головки блока циліндрів',
     galleryBMWTitle: 'Ремонт двигуна BMW',
     galleryFuelTitle: 'Діагностика і ремонт паливної системи',
@@ -139,6 +162,29 @@ const translations = {
     privacyPolicy: 'політикою конфіденційності',
     footerPrivacyLink: 'Політика конфіденційності',
     footerCookieLink: 'Політика файлів cookie',
+    heroTitle: 'Ваш автомобіль у безпеці, готовий до дороги.',
+    heroDesc: 'Ми ставимося до кожного автомобіля як до власного — чесний, якісний ремонт та обслуговування, щоб ви завжди безпечно доїжджали.',
+    heroBtn: 'Записатися',
+    servicesTitle: 'Наші основні послуги',
+    coreService1Title: 'Профілактичне обслуговування',
+    coreService1Desc: 'Заміна оливи та фільтрів, перевірка рідин, ротація шин і сезонні огляди — дрібні роботи, що запобігають великим ремонтам.',
+    coreService2Title: 'Діагностика та ремонт',
+    coreService2Desc: 'Точна діагностика проблем двигуна, гальм, підвіски або коробки передач — усунено правильно з першого разу.',
+    coreService3Title: 'Шини та геометрія',
+    coreService3Desc: 'Нові шини, балансування та чотириколісна геометрія для кращої економії та безпеки.',
+    coreService4Title: 'Спеціальні послуги',
+    coreService4Desc: 'Ремонт кондиціонера, електродіагностика, роботи з вихлопом та тюнінг — бо кожен автомобіль заслуговує на фахову увагу.',
+    quoteText1: '«Від контрольної лампи двигуна до заміни гальм',
+    quoteText2: '— ми подбаємо про вас.»',
+    quoteCaption: 'Від профілактичного обслуговування до складної діагностики — ми тут для вас.',
+    bookingTitle: 'Запишіться на сервіс',
+    bookingDesc1: 'Скажіть нам, що вам потрібно, і ми підтвердимо час вашого візиту.',
+    bookingDesc2: 'Приймаємо без запису, але із записом сервіс виконаємо швидше.',
+    contactNameLabel: 'Ім\'я',
+    contactEmailLabel: 'E-mail',
+    contactMessageLabel: 'Повідомлення',
+    footerTitle: 'Як нас знайти?',
+    googleMapsBtn: 'Google Maps',
   },
   en: {
     navServices: 'Services',
@@ -164,16 +210,16 @@ const translations = {
     contactMessage: 'Message',
     contactBtn: 'Send',
     title: 'Mechanik Plus - Car Service',
-    footerContactTitle: 'Contact',
+    footerContactTitle: 'Contact:',
     footerPhone1: 'Phone: +420 777 318 202',
     footerPhone2: 'Phone: +420 773 977 965',
     footerEmail: 'autoservis@mechanik-plus.com',
     footerAddress: 'Líšný 2.díl 6, 468 22 Líšný-Železný Brod, Czechia',
     footerMap: 'https://www.google.com/maps?q=Líšný+2.díl+6,+468+22+Líšný-Železný+Brod,+Czechia&output=embed',
-    footerHoursTitle: 'Opening Hours',
-    footerHoursMonFri: 'Monday–Friday: 8:00–20:00',
-    footerHoursSat: 'Saturday: 9:00–14:00',
-    footerHoursSun: 'Sunday: by appointment',
+    footerHoursTitle: 'Opening Hours:',
+    footerHoursMonFri: 'Mon-Fri: 08:00-20:00',
+    footerHoursSat: 'Sat: 09:00-14:00',
+    footerHoursSun: 'Sun: by appointment',
     repairHeadTitle: 'Cylinder head repair',
     galleryBMWTitle: 'BMW engine repair',
     galleryFuelTitle: 'Fuel system diagnostics and repair',
@@ -208,6 +254,29 @@ const translations = {
     privacyPolicy: 'privacy policy',
     footerPrivacyLink: 'Privacy Policy',
     footerCookieLink: 'Cookie Policy',
+    heroTitle: 'Keeping you safe and road-ready.',
+    heroDesc: 'We treat every vehicle like it\'s our own — offering honest, high-quality repairs and maintenance that keep you moving confidently.',
+    heroBtn: 'Book your service',
+    servicesTitle: 'Our core services',
+    coreService1Title: 'Preventive Maintenance',
+    coreService1Desc: 'Oil & filter changes, fluid checks, tire rotation, and seasonal inspections — small jobs that prevent big repairs.',
+    coreService2Title: 'Diagnostics & Repairs',
+    coreService2Desc: 'Accurate troubleshooting for engines, brakes, suspension, or transmission issues — fixed right the first time.',
+    coreService3Title: 'Tires & Alignment',
+    coreService3Desc: 'New tires, balancing, and four-wheel alignment for better mileage and safety.',
+    coreService4Title: 'Specialty Services',
+    coreService4Desc: 'AC repair, electrical diagnostics, exhaust work, and performance tuning — because every car deserves expert attention.',
+    quoteText1: '"From check engine lights to brake jobs',
+    quoteText2: '— we\'ve got you covered."',
+    quoteCaption: 'From preventive maintenance to complex diagnostics, we\'ve got you covered.',
+    bookingTitle: 'Book your auto service',
+    bookingDesc1: 'Tell us what you need, and we\'ll confirm your appointment time right away.',
+    bookingDesc2: 'Walk-ins welcome, but scheduling ahead means faster service.',
+    contactNameLabel: 'Name',
+    contactEmailLabel: 'Email address',
+    contactMessageLabel: 'Leave a message',
+    footerTitle: 'How to find us?',
+    googleMapsBtn: 'Google Maps',
   }
 };
 
@@ -249,11 +318,31 @@ function setLanguage(lang) {
   if (document.getElementById('service11-desc')) document.getElementById('service11-desc').textContent = t.service11Desc;
   if (document.getElementById('service12-title')) document.getElementById('service12-title').textContent = t.service12Title;
   if (document.getElementById('service12-desc')) document.getElementById('service12-desc').textContent = t.service12Desc;
+  // Core services table (redesigned)
+  if (document.getElementById('core-service1-title')) document.getElementById('core-service1-title').textContent = t.coreService1Title;
+  if (document.getElementById('core-service1-desc')) document.getElementById('core-service1-desc').textContent = t.coreService1Desc;
+  if (document.getElementById('core-service2-title')) document.getElementById('core-service2-title').textContent = t.coreService2Title;
+  if (document.getElementById('core-service2-desc')) document.getElementById('core-service2-desc').textContent = t.coreService2Desc;
+  if (document.getElementById('core-service3-title')) document.getElementById('core-service3-title').textContent = t.coreService3Title;
+  if (document.getElementById('core-service3-desc')) document.getElementById('core-service3-desc').textContent = t.coreService3Desc;
+  if (document.getElementById('core-service4-title')) document.getElementById('core-service4-title').textContent = t.coreService4Title;
+  if (document.getElementById('core-service4-desc')) document.getElementById('core-service4-desc').textContent = t.coreService4Desc;
+  // Quote section
+  if (document.getElementById('quote-text1')) document.getElementById('quote-text1').textContent = t.quoteText1;
+  if (document.getElementById('quote-text2')) document.getElementById('quote-text2').textContent = t.quoteText2;
+  if (document.getElementById('quote-caption')) document.getElementById('quote-caption').textContent = t.quoteCaption;
+  // Booking section
+  if (document.getElementById('booking-title')) document.getElementById('booking-title').textContent = t.bookingTitle;
+  if (document.getElementById('booking-desc1')) document.getElementById('booking-desc1').textContent = t.bookingDesc1;
+  if (document.getElementById('booking-desc2')) document.getElementById('booking-desc2').textContent = t.bookingDesc2;
+  if (document.getElementById('contact-name-label')) document.getElementById('contact-name-label').textContent = t.contactNameLabel;
+  if (document.getElementById('contact-email-label')) document.getElementById('contact-email-label').textContent = t.contactEmailLabel;
+  if (document.getElementById('contact-message-label')) document.getElementById('contact-message-label').textContent = t.contactMessageLabel;
   if (document.getElementById('contact-title')) document.getElementById('contact-title').textContent = t.contactTitle;
-  if (document.getElementById('contact-name')) document.getElementById('contact-name').placeholder = t.contactName;
-  if (document.getElementById('contact-email')) document.getElementById('contact-email').placeholder = t.contactEmail;
+  if (document.getElementById('contact-name')) document.getElementById('contact-name').placeholder = t.contactNameLabel || t.contactName;
+  if (document.getElementById('contact-email')) document.getElementById('contact-email').placeholder = t.contactEmailLabel || t.contactEmail;
   if (document.getElementById('contact-phone')) document.getElementById('contact-phone').placeholder = t.contactPhone;
-  if (document.getElementById('contact-message')) document.getElementById('contact-message').placeholder = t.contactMessage;
+  if (document.getElementById('contact-message')) document.getElementById('contact-message').placeholder = t.contactMessageLabel || t.contactMessage;
   if (document.getElementById('contact-btn')) document.getElementById('contact-btn').textContent = t.contactBtn;
   if (document.getElementById('footer-contact-title')) document.getElementById('footer-contact-title').textContent = t.footerContactTitle;
   if (document.getElementById('footer-phone-1')) document.getElementById('footer-phone-1').textContent = t.footerPhone1;
@@ -265,6 +354,8 @@ function setLanguage(lang) {
   if (document.getElementById('footer-hours-monfri')) document.getElementById('footer-hours-monfri').textContent = t.footerHoursMonFri;
   if (document.getElementById('footer-hours-sat')) document.getElementById('footer-hours-sat').textContent = t.footerHoursSat;
   if (document.getElementById('footer-hours-sun')) document.getElementById('footer-hours-sun').textContent = t.footerHoursSun;
+  if (document.getElementById('footer-title')) document.getElementById('footer-title').textContent = t.footerTitle;
+  if (document.getElementById('footer-maps-btn')) document.getElementById('footer-maps-btn').textContent = t.googleMapsBtn;
   if (document.getElementById('fotovideo-title')) document.getElementById('fotovideo-title').textContent = t.navFotovideo;
   // Update gallery group titles if present
   if (document.getElementById('gallery-group-title')) document.getElementById('gallery-group-title').textContent = t.repairHeadTitle;
