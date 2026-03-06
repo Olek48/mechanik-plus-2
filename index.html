@@ -108,68 +108,163 @@
   </header>
 
   <section class="hero">
-    <div class="hero-inner">
-      <h1 id="hero-title">Vaše auto v bezpečí, připravené na cestu.</h1>
-      <p id="hero-desc">U nás se ke každému vozidlu chováme jako k vlastnímu — poctivé, kvalitní opravy a servis, abyste vždy bezpečně dojeli.</p>
-      <a href="#contact" class="hero-cta" id="hero-btn">Objednat se</a>
+    <h1 id="hero-title">Vaše auto, naše péče</h1>
+    <div class="hero-frame">
+      <p id="hero-desc">Profesionální opravy a servis vozidel, kterým můžete důvěřovat.</p>
     </div>
+    <a href="#contact" class="btn" id="hero-btn">Objednat se</a>
+    <style>
+      .hero-frame {
+        background: rgba(0,0,0,0.60);
+        border-radius: 18px;
+        box-shadow: 0 2px 16px 4px rgba(30,30,30,0.08);
+        padding: 10px 18px;
+        margin-bottom: 14px;
+        display: inline-block;
+        border: 1px solid rgba(255,255,255,0.12);
+      }
+      .hero {
+        background: url('gallery-photos/photo12.jpg') center 50%/cover no-repeat;
+        position: relative;
+        min-height: 280px;
+        padding: 48px 0;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .hero h1 {
+        font-size: 3.2rem;
+        color: #fff;
+        text-shadow: 0 4px 24px #222, 0 2px 8px #ff6600;
+        margin-bottom: 24px;
+        position: relative;
+        z-index: 2;
+      }
+      .hero p {
+        font-size: 1.5rem;
+        color: #fff;
+        text-shadow: none;
+        margin-bottom: 32px;
+        position: relative;
+        z-index: 2;
+        max-width: 600px;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+      }
+      .hero .btn {
+        position: relative;
+        z-index: 2;
+        font-size: 1.2rem;
+        padding: 16px 40px;
+      }
+      .hero::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(30,30,30,0.44);
+        z-index: 1;
+        border-radius: 20px;
+      }
+      @media (max-width: 768px) {
+        .hero {
+          min-height: 200px;
+          padding: 32px 12px;
+        }
+        .hero h1 {
+          font-size: 2rem;
+          margin-bottom: 16px;
+        }
+        .hero p {
+          font-size: 1.1rem;
+          max-width: 90%;
+        }
+        .hero .btn {
+          font-size: 1rem;
+          padding: 12px 28px;
+        }
+      }
+      @media (max-width: 480px) {
+        .hero h1 {
+          font-size: 1.6rem;
+        }
+        .hero p {
+          font-size: 1rem;
+        }
+      }
+    </style>
   </section>
 
   <section class="services" id="services">
-    <div class="services-inner">
-      <h2 id="services-title">Naše hlavní služby</h2>
-      <div class="services-table">
-        <div class="service-row">
-          <div class="service-row-label"><span id="core-service1-title">Preventivní údržba</span></div>
-          <div class="service-row-desc"><p id="core-service1-desc">Výměna oleje a filtrů, kontrola kapalin, rotace pneumatik a sezónní prohlídky — malé práce, které předcházejí velkým opravám.</p></div>
-        </div>
-        <div class="service-row">
-          <div class="service-row-label"><span id="core-service2-title">Diagnostika a opravy</span></div>
-          <div class="service-row-desc"><p id="core-service2-desc">Přesná diagnostika problémů motoru, brzd, podvozku nebo převodovky — opraveno hned napoprvé.</p></div>
-        </div>
-        <div class="service-row">
-          <div class="service-row-label"><span id="core-service3-title">Pneumatiky a geometrie</span></div>
-          <div class="service-row-desc"><p id="core-service3-desc">Nové pneumatiky, vyvážení a čtyřkolová geometrie pro nižší spotřebu a vyšší bezpečnost.</p></div>
-        </div>
-        <div class="service-row">
-          <div class="service-row-label"><span id="core-service4-title">Speciální služby</span></div>
-          <div class="service-row-desc"><p id="core-service4-desc">Oprava klimatizace, elektrodiagnostika, práce na výfuku a výkonové ladění — protože každé auto si zaslouží odbornou péči.</p></div>
-        </div>
+    <h2 id="services-title">Naše služby</h2>
+    <div class="cards">
+      <div class="card">
+        <h3 id="service1-title">Diagnostika</h3>
+        <p id="service1-desc">Moderní vybavení pro přesné zjištění závad.</p>
+      </div>
+      <div class="card">
+        <h3 id="service2-title">Výměna oleje</h3>
+        <p id="service2-desc">Rychlá a spolehlivá výměna oleje a filtrů.</p>
+      </div>
+      <div class="card">
+        <h3 id="service3-title">Servis brzd</h3>
+        <p id="service3-desc">Bezpečná a efektivní kontrola a oprava brzd.</p>
+      </div>
+      <div class="card">
+        <h3 id="service4-title">Pneuservis</h3>
+        <p id="service4-desc">Přezutí, vyvážení a sezónní výměna pneumatik.</p>
+      </div>
+      <div class="card">
+        <h3 id="service5-title">Oprava podvozku a vzduchového podvozku</h3>
+        <p id="service5-desc">Oprava podvozku a pnemopodvozku jakékoli složitosti.</p>
+      </div>
+      <div class="card">
+        <h3 id="service6-title">Diagnostika a oprava palivového systému</h3>
+        <p id="service6-desc">Diagnostika a oprava palivového systému.</p>
+      </div>
+      <div class="card">
+        <h3 id="service7-title">Oprava motoru, převodovky, spojky</h3>
+        <p id="service7-desc">Profesionální oprava motoru, převodovky a spojky jakéhokoliv auta.</p>
+      </div>
+      <div class="card">
+        <h3 id="service8-title">Autoelektrikář</h3>
+        <p id="service8-desc">Diagnostika a oprava elektrických systémů automobilu.</p>
+      </div>
+      <div class="card">
+        <h3 id="service9-title">Montáž doplňkového vybavení</h3>
+        <p id="service9-desc">Montáž a výměna doplňkového vybavení a příslušenství.</p>
+      </div>
+      <div class="card">
+        <h3 id="service10-title">Leštění světlometů</h3>
+        <p id="service10-desc">Obnova průhlednosti a lesku světlometů pro lepší viditelnost.</p>
+      </div>
+      <div class="card">
+        <h3 id="service11-title">Antikorozní úprava</h3>
+        <p id="service11-desc">Profesionální antikorozní úprava karoserie a podvozku.</p>
+      </div>
+      <div class="card">
+        <h3 id="service12-title">Výměna prahů</h3>
+        <p id="service12-desc">Kvalitní výměna a oprava prahů automobilu.</p>
       </div>
     </div>
   </section>
 
-  <section class="quote-section">
-    <div class="quote-inner">
-      <p class="quote-red" id="quote-text1">„Od kontrolky motoru po výměnu brzd</p>
-      <p class="quote-white" id="quote-text2">— postaráme se o vás."</p>
-      <p class="quote-caption" id="quote-caption">Od preventivní údržby po složitou diagnostiku — jsme tu pro vás.</p>
-    </div>
-  </section>
-
-  <section class="booking" id="contact">
-    <div class="booking-inner">
-      <div class="booking-text">
-        <h2 id="booking-title">Rezervujte si servis</h2>
-        <p id="booking-desc1">Řekněte nám, co potřebujete, a my potvrdíme čas vaší návštěvy.</p>
-        <p id="booking-desc2">Příjímáme i bez objednání, ale s objednáním provedeme servis rychleji.</p>
+  <section class="contact" id="contact">
+    <h2 id="contact-title">Kontaktujte nás</h2>
+    <form class="contact-form" id="contact-form" action="https://formspree.io/f/xyzlpwyo" method="POST">
+      <input type="text" name="name" id="contact-name" placeholder="Jméno" required>
+      <input type="email" name="email" id="contact-email" placeholder="E-mail (nepovinné)">
+      <input type="tel" name="phone" id="contact-phone" placeholder="Telefon" required>
+      <textarea name="message" id="contact-message" placeholder="Zpráva" required></textarea>
+      <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px;">
+        <input type="checkbox" id="privacy-consent" name="privacy_consent" required style="width: auto; margin: 0;">
+        <label for="privacy-consent" id="privacy-consent-label" style="margin: 0; font-size: 0.95rem;">Souhlasím se <a href="privacy-cs.html" target="_blank" style="color: #ff6600;">zásadami ochrany osobních údajů</a></label>
       </div>
-      <div class="booking-form-wrap">
-        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xyzlpwyo" method="POST">
-          <label id="contact-name-label">Jméno</label>
-          <input type="text" name="name" id="contact-name" placeholder="Jméno" required>
-          <label id="contact-email-label">E-mail</label>
-          <input type="email" name="email" id="contact-email" placeholder="E-mail" required>
-          <label id="contact-message-label">Zpráva</label>
-          <textarea name="message" id="contact-message" placeholder="Zpráva" required></textarea>
-          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px;">
-            <input type="checkbox" id="privacy-consent" name="privacy_consent" required style="width: auto; margin: 0;">
-            <label for="privacy-consent" id="privacy-consent-label" style="margin: 0; font-size: 0.85rem; color: #aaa;">Souhlasím se <a href="privacy-cs.html" target="_blank" style="color: #e63232;">zásadami ochrany osobních údajů</a></label>
-          </div>
-          <button type="submit" class="btn" id="contact-btn">Odeslat</button>
-        </form>
-      </div>
-    </div>
+      <button type="submit" class="btn" id="contact-btn">Odeslat</button>
+    </form>
   </section>
 
   <!-- Notification Modal -->
@@ -183,27 +278,25 @@
   </div>
 
   <footer class="footer">
-    <div class="footer-heading-wrap">
-      <h2 id="footer-title">Jak nás najít?</h2>
-    </div>
     <div class="footer-content">
-      <div class="footer-left">
-        <div class="footer-info">
-          <h3 id="footer-contact-title">Kontakt:</h3>
-          <p id="footer-phone-1">Telefon: +420 777 318 202</p>
-          <p id="footer-phone-2">Telefon: +420 773 977 965</p>
-          <p id="footer-email">autoservis@mechanik-plus.com</p>
-          <p id="footer-address">Líšný 2.díl 6, 468 22 Líšný-Železný Brod, Česko</p>
-        </div>
-        <div class="footer-hours">
-          <h3 id="footer-hours-title">Otevírací doba:</h3>
-          <p id="footer-hours-monfri">Pn-Pá: 08:00-20:00</p>
-          <p id="footer-hours-sat">So: 09:00-14:00</p>
-          <p id="footer-hours-sun">Ne: po zápisu</p>
-        </div>
+      <div class="footer-info">
+        <h3 id="footer-contact-title">Kontakt</h3>
+        <p id="footer-phone-1">Telefon: +420 777 318 202</p>
+        <p id="footer-phone-2">Telefon: +420 773 977 965</p>
+        <p id="footer-email">autoservis@mechanik-plus.com</p>
+        <p id="footer-address">Líšný 2.díl 6, 468 22 Líšný-Železný Brod, Česko</p>
       </div>
       <div class="footer-map">
-        <a href="https://maps.google.com/?q=Líšný+2.díl+6,+468+22+Líšný-Železný+Brod,+Česko" target="_blank" rel="noopener" class="google-maps-btn" id="footer-maps-btn">Google Maps</a>
+        <iframe id="footer-map" src="https://www.google.com/maps?q=Líšný+2.díl+6,+468+22+Líšný-Železný+Brod,+Česko&output=embed" width="540" height="220" style="border-radius:16px; border:2px solid #ff6600;"></iframe>
+      </div>
+      <div class="footer-hours">
+        <h3 id="footer-hours-title">Otevírací doba</h3>
+        <p id="footer-hours-monfri">Pondělí–Pátek: 8:00–20:00</p>
+        <p id="footer-hours-sat">Sobota: 9:00–14:00</p>
+        <p id="footer-hours-sun">Neděle: po zápisu</p>
+      </div>
+      <div class="footer-logo">
+          <!-- Logo removed from footer -->
       </div>
     </div>
     <div class="footer-policy-links">
