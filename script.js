@@ -3,13 +3,19 @@
 // Note: Google Analytics has been removed from this site.
 const translations = {
   cs: {
+    langNameCs: 'Čeština',
+    langNameUk: 'Українська',
+    langNameEn: 'English',
     navServices: 'Služby',
     navContact: 'Kontakt',
-    navFotovideo: 'Fotografie našich prací',
+    navFotovideo: 'Foto/Video',
+    fotovideoTitle: 'Fotografie našich prací',
     langBtn: 'Jazyk ▼',
     heroTitle: 'Vaše auto, naše péče',
     heroDesc: 'Profesionální opravy a servis vozidel, kterým můžete důvěřovat.',
     heroBtn: 'Objednat se',
+    coverageTitle: 'Od kontrolek motoru až po brzdy',
+    coverageSubtitle: 'Postaráme se o vše, co vaše auto potřebuje.',
     servicesTitle: 'Naše služby',
     service1Title: 'Diagnostika',
     service1Desc: 'Moderní vybavení pro přesné zjištění závad.',
@@ -20,12 +26,20 @@ const translations = {
     service4Title: 'Pneuservis',
     service4Desc: 'Přezutí, vyvážení a sezónní výměna pneumatik.',
     contactTitle: 'Kontaktujte nás',
+    contactLead: 'Napište, co je potřeba opravit, a potvrdíme vám termín co nejdříve.',
+    contactNote: 'Objednání předem vám obvykle zrychlí servis.',
+    contactNameLabel: 'Jméno',
+    contactEmailLabel: 'E-mail (nepovinné)',
+    contactPhoneLabel: 'Telefon',
+    contactMessageLabel: 'Zpráva',
     contactName: 'Jméno',
     contactEmail: 'E-mail (nepovinné)',
     contactPhone: 'Telefon',
     contactMessage: 'Zpráva',
     contactBtn: 'Odeslat',
-    title: 'Mechanik Plus - Autoservis',
+    homeTitle: 'Mechanik Plus - Autoservis',
+    fotovideoPageTitle: 'Foto/Video - Mechanik Plus',
+    footerTitle: 'Jak nás najdete?',
     footerContactTitle: 'Kontakt',
     footerPhone1: 'Telefon: +420 777 318 202',
     footerPhone2: 'Telefon: +420 773 977 965',
@@ -72,13 +86,19 @@ const translations = {
     footerCookieLink: 'Zásady cookies',
   },
   uk: {
+    langNameCs: 'Čeština',
+    langNameUk: 'Українська',
+    langNameEn: 'English',
     navServices: 'Послуги',
     navContact: 'Контакт',
-    navFotovideo: 'Фото наших робіт',
+    navFotovideo: 'Фото/Відео',
+    fotovideoTitle: 'Фото наших робіт',
     langBtn: 'Мова ▼',
     heroTitle: 'Ваш автомобіль, наша турбота',
     heroDesc: 'Професійний ремонт та сервіс, якому ви можете довіряти.',
     heroBtn: 'Записатися',
+    coverageTitle: 'Від індикаторів двигуна до гальм',
+    coverageSubtitle: 'Подбаємо про все, що потрібно вашому авто.',
     servicesTitle: 'Наші послуги',
     service1Title: 'Діагностика',
     service1Desc: 'Сучасне обладнання для точного виявлення несправностей.',
@@ -89,12 +109,20 @@ const translations = {
     service4Title: 'Шиномонтаж',
     service4Desc: 'Монтаж, балансування та сезонна заміна шин.',
     contactTitle: 'Звʼяжіться з нами',
+    contactLead: 'Напишіть, що потрібно відремонтувати, і ми швидко підтвердимо зручний термін.',
+    contactNote: 'Попередній запис зазвичай пришвидшує обслуговування.',
+    contactNameLabel: "Ім'я",
+    contactEmailLabel: 'E-mail (необовʼязково)',
+    contactPhoneLabel: 'Телефон',
+    contactMessageLabel: 'Повідомлення',
     contactName: "Ім'я",
     contactEmail: 'E-mail (необовʼязково)',
     contactPhone: 'Телефон',
     contactMessage: 'Повідомлення',
     contactBtn: 'Відправити',
-    title: 'Mechanik Plus - Автосервіс',
+    homeTitle: 'Mechanik Plus - Автосервіс',
+    fotovideoPageTitle: 'Фото/Відео - Mechanik Plus',
+    footerTitle: 'Як нас знайти?',
     footerContactTitle: 'Контакт',
     footerPhone1: 'Телефон: +420 777 318 202',
     footerPhone2: 'Телефон: +420 773 977 965',
@@ -141,13 +169,19 @@ const translations = {
     footerCookieLink: 'Політика файлів cookie',
   },
   en: {
+    langNameCs: 'Čeština',
+    langNameUk: 'Українська',
+    langNameEn: 'English',
     navServices: 'Services',
     navContact: 'Contact',
-    navFotovideo: 'Photos of our work',
+    navFotovideo: 'Photo/Video',
+    fotovideoTitle: 'Photos of our work',
     langBtn: 'Language ▼',
     heroTitle: 'Your Car, Our Care',
     heroDesc: 'Professional auto repair & service you can trust.',
     heroBtn: 'Book Now',
+    coverageTitle: 'From Engine Lights to Brakes',
+    coverageSubtitle: 'We take care of everything your car needs.',
     servicesTitle: 'Our Services',
     service1Title: 'Diagnostics',
     service1Desc: 'Modern equipment for accurate fault detection.',
@@ -158,12 +192,20 @@ const translations = {
     service4Title: 'Tire Service',
     service4Desc: 'Mounting, balancing, and seasonal tire change.',
     contactTitle: 'Contact Us',
+    contactLead: 'Tell us what needs to be fixed, and we will confirm the nearest available slot.',
+    contactNote: 'Booking in advance usually speeds up your service.',
+    contactNameLabel: 'Name',
+    contactEmailLabel: 'E-mail (optional)',
+    contactPhoneLabel: 'Phone',
+    contactMessageLabel: 'Message',
     contactName: 'Name',
     contactEmail: 'E-mail (optional)',
     contactPhone: 'Phone',
     contactMessage: 'Message',
     contactBtn: 'Send',
-    title: 'Mechanik Plus - Car Service',
+    homeTitle: 'Mechanik Plus - Car Service',
+    fotovideoPageTitle: 'Photo/Video - Mechanik Plus',
+    footerTitle: 'How to find us?',
     footerContactTitle: 'Contact',
     footerPhone1: 'Phone: +420 777 318 202',
     footerPhone2: 'Phone: +420 773 977 965',
@@ -214,16 +256,42 @@ const translations = {
 const langBtn = document.getElementById('lang-btn');
 const langList = document.getElementById('lang-list');
 
+function getCurrentPageName() {
+  return window.location.pathname.split('/').pop() || 'index.html';
+}
+
+function getLocalizedPageTarget(lang, currentPage) {
+  if (/^privacy-(cs|uk|en)\.html$/i.test(currentPage)) {
+    return `privacy-${lang}.html`;
+  }
+  if (/^cookies-(cs|uk|en)\.html$/i.test(currentPage)) {
+    return `cookies-${lang}.html`;
+  }
+  return null;
+}
+
 function setLanguage(lang) {
   const t = translations[lang];
+  if (!t) return;
+
+  document.documentElement.lang = lang;
+
   // Update only if element exists
   if (document.getElementById('nav-services')) document.getElementById('nav-services').textContent = t.navServices;
   if (document.getElementById('nav-contact')) document.getElementById('nav-contact').textContent = t.navContact;
   if (document.getElementById('nav-fotovideo')) document.getElementById('nav-fotovideo').textContent = t.navFotovideo;
   if (document.getElementById('lang-btn')) langBtn.textContent = t.langBtn;
+  const csOption = document.querySelector('#lang-list li[data-lang="cs"]');
+  const ukOption = document.querySelector('#lang-list li[data-lang="uk"]');
+  const enOption = document.querySelector('#lang-list li[data-lang="en"]');
+  if (csOption) csOption.textContent = t.langNameCs;
+  if (ukOption) ukOption.textContent = t.langNameUk;
+  if (enOption) enOption.textContent = t.langNameEn;
   if (document.getElementById('hero-title')) document.getElementById('hero-title').textContent = t.heroTitle;
   if (document.getElementById('hero-desc')) document.getElementById('hero-desc').textContent = t.heroDesc;
   if (document.getElementById('hero-btn')) document.getElementById('hero-btn').textContent = t.heroBtn;
+  if (document.getElementById('coverage-title')) document.getElementById('coverage-title').textContent = t.coverageTitle;
+  if (document.getElementById('coverage-subtitle')) document.getElementById('coverage-subtitle').textContent = t.coverageSubtitle;
   if (document.getElementById('services-title')) document.getElementById('services-title').textContent = t.servicesTitle;
   if (document.getElementById('service1-title')) document.getElementById('service1-title').textContent = t.service1Title;
   if (document.getElementById('service1-desc')) document.getElementById('service1-desc').textContent = t.service1Desc;
@@ -250,11 +318,23 @@ function setLanguage(lang) {
   if (document.getElementById('service12-title')) document.getElementById('service12-title').textContent = t.service12Title;
   if (document.getElementById('service12-desc')) document.getElementById('service12-desc').textContent = t.service12Desc;
   if (document.getElementById('contact-title')) document.getElementById('contact-title').textContent = t.contactTitle;
+  if (document.getElementById('contact-lead')) document.getElementById('contact-lead').textContent = t.contactLead;
+  if (document.getElementById('contact-note')) document.getElementById('contact-note').textContent = t.contactNote;
+  if (document.getElementById('contact-name-label')) document.getElementById('contact-name-label').textContent = t.contactNameLabel;
+  if (document.getElementById('contact-email-label')) document.getElementById('contact-email-label').textContent = t.contactEmailLabel;
+  if (document.getElementById('contact-phone-label')) document.getElementById('contact-phone-label').textContent = t.contactPhoneLabel;
+  if (document.getElementById('contact-message-label')) document.getElementById('contact-message-label').textContent = t.contactMessageLabel;
   if (document.getElementById('contact-name')) document.getElementById('contact-name').placeholder = t.contactName;
   if (document.getElementById('contact-email')) document.getElementById('contact-email').placeholder = t.contactEmail;
   if (document.getElementById('contact-phone')) document.getElementById('contact-phone').placeholder = t.contactPhone;
   if (document.getElementById('contact-message')) document.getElementById('contact-message').placeholder = t.contactMessage;
   if (document.getElementById('contact-btn')) document.getElementById('contact-btn').textContent = t.contactBtn;
+  if (document.getElementById('footer-title')) {
+    document.getElementById('footer-title').textContent = t.footerTitle;
+  } else {
+    const footerTitleEl = document.querySelector('.footer-title');
+    if (footerTitleEl) footerTitleEl.textContent = t.footerTitle;
+  }
   if (document.getElementById('footer-contact-title')) document.getElementById('footer-contact-title').textContent = t.footerContactTitle;
   if (document.getElementById('footer-phone-1')) document.getElementById('footer-phone-1').textContent = t.footerPhone1;
   if (document.getElementById('footer-phone-2')) document.getElementById('footer-phone-2').textContent = t.footerPhone2;
@@ -265,7 +345,7 @@ function setLanguage(lang) {
   if (document.getElementById('footer-hours-monfri')) document.getElementById('footer-hours-monfri').textContent = t.footerHoursMonFri;
   if (document.getElementById('footer-hours-sat')) document.getElementById('footer-hours-sat').textContent = t.footerHoursSat;
   if (document.getElementById('footer-hours-sun')) document.getElementById('footer-hours-sun').textContent = t.footerHoursSun;
-  if (document.getElementById('fotovideo-title')) document.getElementById('fotovideo-title').textContent = t.navFotovideo;
+  if (document.getElementById('fotovideo-title')) document.getElementById('fotovideo-title').textContent = t.fotovideoTitle;
   // Update gallery group titles if present
   if (document.getElementById('gallery-group-title')) document.getElementById('gallery-group-title').textContent = t.repairHeadTitle;
   if (document.getElementById('gallery-group2-title')) document.getElementById('gallery-group2-title').textContent = t.galleryBMWTitle;
@@ -294,7 +374,13 @@ function setLanguage(lang) {
     footerCookieLink.href = `cookies-${lang}.html`;
     footerCookieLink.textContent = t.footerCookieLink;
   }
-  document.title = t.title;
+  const currentPage = getCurrentPageName();
+  if (currentPage === 'index.html' || currentPage === '') {
+    document.title = t.homeTitle;
+  }
+  if (currentPage === 'fotovideo.html') {
+    document.title = t.fotovideoPageTitle;
+  }
 }
 
 // Ensure UI behavior is initialized after DOM is ready
@@ -305,6 +391,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Initialize language from localStorage or default
   const savedLang = localStorage.getItem('siteLang') || 'cs';
+  const currentPage = getCurrentPageName();
+  const localizedTarget = getLocalizedPageTarget(savedLang, currentPage);
+
+  if (localizedTarget && localizedTarget !== currentPage) {
+    window.location.href = localizedTarget;
+    return;
+  }
+
   setLanguage(savedLang);
 
   // Highlight current nav item
@@ -313,13 +407,51 @@ document.addEventListener('DOMContentLoaded', function() {
     const el = document.getElementById(id);
     if (el) el.classList.remove('active-nav');
   });
-  const currentPage = window.location.pathname.split('/').pop();
+  
   if (currentPage === 'index.html' || currentPage === '') {
     const navServices = document.getElementById('nav-services');
     if (navServices) navServices.classList.add('active-nav');
   } else if (currentPage === 'fotovideo.html') {
     const navFotovideo = document.getElementById('nav-fotovideo');
     if (navFotovideo) navFotovideo.classList.add('active-nav');
+  }
+
+  // Header visibility follows scroll direction: hide on down, show on up.
+  const headerEl = document.querySelector('.header');
+  if (headerEl) {
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+    const minDelta = 6;
+
+    const updateHeaderVisibility = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY <= 20) {
+        headerEl.classList.remove('header-hidden');
+        lastScrollY = currentScrollY;
+        return;
+      }
+
+      if (currentScrollY > lastScrollY + minDelta) {
+        headerEl.classList.add('header-hidden');
+      } else if (currentScrollY < lastScrollY - minDelta) {
+        headerEl.classList.remove('header-hidden');
+      }
+
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        window.requestAnimationFrame(function() {
+          updateHeaderVisibility();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+
+    updateHeaderVisibility();
   }
 
   // Language dropdown logic
@@ -334,8 +466,15 @@ document.addEventListener('DOMContentLoaded', function() {
       li.addEventListener('click', function(e) {
         const selected = this.dataset.lang;
         if (selected) {
-          setLanguage(selected);
           localStorage.setItem('siteLang', selected);
+
+          const targetPage = getLocalizedPageTarget(selected, currentPage);
+          if (targetPage && targetPage !== currentPage) {
+            window.location.href = targetPage;
+            return;
+          }
+
+          setLanguage(selected);
           // close list
           langListEl.classList.remove('show');
           
