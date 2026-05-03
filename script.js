@@ -614,3 +614,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+const burgerBtn = document.getElementById('burger-btn');
+const nav = document.querySelector('.nav');
+if (burgerBtn && nav) {
+  burgerBtn.addEventListener('click', () => {
+    burgerBtn.classList.toggle('open');
+    nav.classList.toggle('open');
+  });
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      burgerBtn.classList.remove('open');
+      nav.classList.remove('open');
+    });
+  });
+}

@@ -1372,3 +1372,46 @@ html[lang="uk"] body.home-page #hero-btn {
     margin-bottom: 10px !important;
   }
 }
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  margin-left: auto;
+  z-index: 100;
+}
+.burger span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: var(--brand);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+.burger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.burger.open span:nth-child(2) { opacity: 0; }
+.burger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+@media (max-width: 760px) {
+  .burger { display: flex; }
+  .header { flex-wrap: wrap; }
+  .nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding: 10px 0 4px;
+  }
+  .nav.open { display: flex; }
+  .nav a, #lang-btn {
+    text-align: center;
+    width: 100%;
+    padding: 13px;
+  }
+}
