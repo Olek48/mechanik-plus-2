@@ -1415,3 +1415,25 @@ html[lang="uk"] body.home-page #hero-btn {
     padding: 13px;
   }
 }
+
+.contact-direct {
+  margin-top: 28px;
+  color: #252730;
+  font-weight: 600;
+}
+
+.contact-phone {
+  margin: 6px 0 0;
+  font-family: 'Archivo Black', 'Rubik', sans-serif;
+  font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+}
+
+.contact-phone a {
+  color: var(--brand);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-phone a:hover {
+  color: var(--brand-dark);
+}

@@ -28,6 +28,7 @@ const translations = {
     contactTitle: 'Kontaktujte nás',
     contactLead: 'Napište, co je potřeba opravit, a potvrdíme vám termín co nejdříve.',
     contactNote: 'Objednání předem vám obvykle zrychlí servis.',
+    contactDirect: 'Nebo nám zavolejte přímo:',
     contactNameLabel: 'Jméno',
     contactEmailLabel: 'E-mail (nepovinné)',
     contactPhoneLabel: 'Telefon',
@@ -111,6 +112,7 @@ const translations = {
     contactTitle: 'Звʼяжіться з нами',
     contactLead: 'Напишіть, що потрібно відремонтувати, і ми швидко підтвердимо зручний термін.',
     contactNote: 'Попередній запис зазвичай пришвидшує обслуговування.',
+    contactDirect: 'Або зателефонуйте нам безпосередньо:',
     contactNameLabel: "Ім'я",
     contactEmailLabel: 'E-mail (необовʼязково)',
     contactPhoneLabel: 'Телефон',
@@ -194,6 +196,7 @@ const translations = {
     contactTitle: 'Contact Us',
     contactLead: 'Tell us what needs to be fixed, and we will confirm the nearest available slot.',
     contactNote: 'Booking in advance usually speeds up your service.',
+    contactDirect: 'Or call us directly:',
     contactNameLabel: 'Name',
     contactEmailLabel: 'E-mail (optional)',
     contactPhoneLabel: 'Phone',
@@ -320,6 +323,7 @@ function setLanguage(lang) {
   if (document.getElementById('contact-title')) document.getElementById('contact-title').textContent = t.contactTitle;
   if (document.getElementById('contact-lead')) document.getElementById('contact-lead').textContent = t.contactLead;
   if (document.getElementById('contact-note')) document.getElementById('contact-note').textContent = t.contactNote;
+  if (document.getElementById('contact-direct')) document.getElementById('contact-direct').textContent = t.contactDirect;
   if (document.getElementById('contact-name-label')) document.getElementById('contact-name-label').textContent = t.contactNameLabel;
   if (document.getElementById('contact-email-label')) document.getElementById('contact-email-label').textContent = t.contactEmailLabel;
   if (document.getElementById('contact-phone-label')) document.getElementById('contact-phone-label').textContent = t.contactPhoneLabel;
