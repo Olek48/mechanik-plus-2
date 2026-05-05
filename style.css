@@ -359,7 +359,7 @@ html[lang="uk"] body.home-page #hero-btn {
 
 .accordion-card.open .accordion-body {
   max-height: 600px;
-  padding: 16px 22px;
+  padding: 24px 22px;
 }
 
 .accordion-body p {
@@ -1488,8 +1488,9 @@ html[lang="uk"] body.home-page #hero-btn {
   flex: 1;
   margin: 0;
   color: var(--muted);
-  font-size: clamp(0.9rem, 1vw, 1.1rem);
-  line-height: 1.6;
+  font-size: clamp(1rem, 1.3vw, 1.25rem);
+  line-height: 1.75;
+  padding-right: 10px;
 }
 
 .accordion-img {
