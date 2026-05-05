@@ -633,3 +633,14 @@ if (burgerBtn && nav) {
     });
   });
 }
+
+
+// Accordion
+document.querySelectorAll('.accordion-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const card = btn.closest('.accordion-card');
+    const isOpen = card.classList.contains('open');
+    document.querySelectorAll('.accordion-card').forEach(c => c.classList.remove('open'));
+    if (!isOpen) card.classList.add('open');
+  });
+});

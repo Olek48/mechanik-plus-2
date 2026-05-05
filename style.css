@@ -313,34 +313,60 @@ html[lang="uk"] body.home-page #hero-btn {
 }
 
 .card {
-  display: grid;
-  grid-template-columns: minmax(220px, 1.3fr) 2fr;
-  background: var(--paper);
-  border: 1px solid #000;
-  min-height: 72px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-.card h3 {
-  margin: 0;
+.accordion-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background: var(--brand);
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  border: none;
+  padding: 18px 22px;
   font-family: 'Archivo Black', 'Rubik', sans-serif;
-  font-size: clamp(0.95rem, 1.35vw, 1.45rem);
-  padding: 10px;
+  font-size: clamp(0.95rem, 1.35vw, 1.25rem);
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s ease;
 }
 
-.card p {
+.accordion-btn:hover {
+  background: var(--brand-dark);
+}
+
+.accordion-icon {
+  font-size: 0.85rem;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+.accordion-card.open .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0 22px;
+}
+
+.accordion-card.open .accordion-body {
+  max-height: 200px;
+  padding: 16px 22px;
+}
+
+.accordion-body p {
   margin: 0;
-  color: #26272b;
-  display: flex;
-  align-items: center;
-  padding: 12px 16px;
-  font-size: clamp(0.9rem, 1vw, 1.13rem);
-  line-height: 1.35;
+  color: var(--muted);
+  font-size: clamp(0.9rem, 1vw, 1.1rem);
+  line-height: 1.5;
 }
 
 .coverage {
