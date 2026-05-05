@@ -5,8 +5,8 @@
   --bg-soft: #0d0f14;
   --text: #f5f5f5;
   --muted: #c5c6cc;
-  --brand: #ef8722;
-  --brand-dark: #c97018;
+  --brand: #fc7627;
+  --brand-dark: #d96520;
   --panel: #111318;
   --line: #272a33;
   --paper: #e8e8eb;
@@ -127,8 +127,8 @@ body.home-page .header.header-hidden {
 .nav a:hover,
 #lang-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(239, 135, 34, 0.42);
-  background: #ef8722;
+  box-shadow: 0 10px 22px rgba(252, 118, 39, 0.42);
+  background: #fc7627;
 }
 
 .lang-select {
@@ -155,8 +155,8 @@ body.home-page .header.header-hidden {
 }
 
 .nav a.active-nav {
-  box-shadow: 0 10px 22px rgba(239, 135, 34, 0.42);
-  background: #ef8722;
+  box-shadow: 0 10px 22px rgba(252, 118, 39, 0.42);
+  background: #fc7627;
 }
 
 .lang-list li {
@@ -167,7 +167,7 @@ body.home-page .header.header-hidden {
 }
 
 .lang-list li:hover {
-  background: rgba(239, 135, 34, 0.15);
+  background: rgba(252, 118, 39, 0.15);
 }
 
 .hero {
@@ -847,13 +847,13 @@ html[lang="uk"] body.home-page #hero-btn {
   padding: 40px 20px;
   background: #0b0d12;
   border-radius: 20px;
-  border: 1px solid rgba(239, 135, 34, 0.5);
+  border: 1px solid rgba(252, 118, 39, 0.5);
   box-shadow: 0 18px 44px rgba(0, 0, 0, 0.45);
 }
 
 .policy-container h1 {
   color: var(--brand);
-  text-shadow: 0 2px 10px rgba(239, 135, 34, 0.25);
+  text-shadow: 0 2px 10px rgba(252, 118, 39, 0.25);
   margin-bottom: 20px;
   font-size: 2.2rem;
 }
@@ -952,7 +952,7 @@ html[lang="uk"] body.home-page #hero-btn {
   color: #f3f4f6;
   padding: 18px 20px;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
-  border: 1px solid rgba(239, 135, 34, 0.45);
+  border: 1px solid rgba(252, 118, 39, 0.45);
   border-radius: 20px;
   z-index: 10000;
   display: none;
@@ -993,7 +993,7 @@ html[lang="uk"] body.home-page #hero-btn {
 }
 
 .cookie-consent-text a {
-  color: #ef8722;
+  color: #fc7627;
   text-decoration: underline;
   transition: color 0.2s;
 }
@@ -1021,14 +1021,14 @@ html[lang="uk"] body.home-page #hero-btn {
 }
 
 .cookie-consent-btn-accept {
-  background: #ef8722;
+  background: #fc7627;
   color: #0f0f11;
-  border: 2px solid #ef8722;
+  border: 2px solid #fc7627;
 }
 
 .cookie-consent-btn-accept:hover {
-  background: #ef8722;
-  border-color: #ef8722;
+  background: #fc7627;
+  border-color: #fc7627;
 }
 
 .cookie-consent-btn-reject {
@@ -1044,12 +1044,12 @@ html[lang="uk"] body.home-page #hero-btn {
 
 .cookie-consent-btn-settings {
   background: transparent;
-  color: #ef8722;
-  border: 2px solid #ef8722;
+  color: #fc7627;
+  border: 2px solid #fc7627;
 }
 
 .cookie-consent-btn-settings:hover {
-  background: #ef8722;
+  background: #fc7627;
   color: #0f0f11;
 }
 
@@ -1091,7 +1091,7 @@ html[lang="uk"] body.home-page #hero-btn {
   max-height: 80vh;
   overflow-y: auto;
   position: relative;
-  border: 1px solid rgba(239, 135, 34, 0.52);
+  border: 1px solid rgba(252, 118, 39, 0.52);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   animation: slideIn 0.3s ease-out;
 }
@@ -1122,7 +1122,7 @@ html[lang="uk"] body.home-page #hero-btn {
 }
 
 .cookie-settings-close:hover {
-  color: #ef8722;
+  color: #fc7627;
 }
 
 .cookie-settings-header {
@@ -1130,7 +1130,7 @@ html[lang="uk"] body.home-page #hero-btn {
 }
 
 .cookie-settings-header h2 {
-  color: #ef8722;
+  color: #fc7627;
   font-size: 1.8rem;
   margin-bottom: 12px;
   font-family: 'Archivo Black', 'Rubik', sans-serif;
@@ -1204,7 +1204,7 @@ html[lang="uk"] body.home-page #hero-btn {
 }
 
 .cookie-toggle input:checked + .cookie-toggle-slider {
-  background-color: #ef8722;
+  background-color: #fc7627;
 }
 
 .cookie-toggle input:checked + .cookie-toggle-slider:before {
@@ -1242,14 +1242,14 @@ html[lang="uk"] body.home-page #hero-btn {
 }
 
 .cookie-settings-btn-save {
-  background: #ef8722;
+  background: #fc7627;
   color: #0f0f11;
-  border: 2px solid #ef8722;
+  border: 2px solid #fc7627;
 }
 
 .cookie-settings-btn-save:hover {
-  background: #ef8722;
-  border-color: #ef8722;
+  background: #fc7627;
+  border-color: #fc7627;
 }
 
 .cookie-settings-btn-cancel {
